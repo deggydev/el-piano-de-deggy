@@ -1,0 +1,1131 @@
+[
+  {
+    "id": "marcos-witt",
+    "name": "Marcos Witt",
+    "subtitle": "Salmista y Adorador • Clásicos de Adoración",
+    "bio": "Pionero de la alabanza y adoración contemporánea en español, conocido por himnos profundos que guían a la comunión íntima con Dios a través del piano.",
+    "avatarBg": "bg-purple-600",
+    "albums": [
+      {
+        "id": "witt-adoracion-intima",
+        "title": "Adoración y Gloria (Vol. 1)",
+        "year": 2001,
+        "coverGradient": "bg-purple-950",
+        "description": "Una recopilación especial arreglada para piano solo y acompañamiento congregacional.",
+        "songs": [
+          {
+            "id": "cuan-grande-es-dios",
+            "title": "Cuán Grande Es Dios",
+            "originalKey": "C",
+            "bpm": 72,
+            "timeSignature": "4/4",
+            "difficulty": "Fácil",
+            "themes": ["Adoración", "Majestad", "Alabanza Congregacional"],
+            "sections": [
+              {
+                "title": "Intro Piano",
+                "type": "intro",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "C", "lyric": " | " },
+                      { "chord": "Am", "lyric": " | " },
+                      { "chord": "F", "lyric": " | " },
+                      { "chord": "G", "lyric": " | " }
+                    ],
+                    "rawChord": "C           Am          F           G",
+                    "rawLyric": "(Melodía suave de piano)"
+                  }
+                ]
+              },
+              {
+                "title": "Estrofa 1",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "C", "lyric": "El esplendor de un " },
+                      { "chord": "Am", "lyric": "Rey, vestido de majes" },
+                      { "chord": "F", "lyric": "tad" }
+                    ],
+                    "rawChord": "C                   Am                  F",
+                    "rawLyric": "El esplendor de un Rey, vestido de majestad"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "F", "lyric": "La tierra alegre es" },
+                      { "chord": "G", "lyric": "tá, la tierra alegre es" },
+                      { "chord": "C", "lyric": "tá" }
+                    ],
+                    "rawChord": "F                   G                   C",
+                    "rawLyric": "La tierra alegre está, la tierra alegre está"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "C", "lyric": "Cubierto está de " },
+                      { "chord": "Am", "lyric": "luz, venció a la oscuri" },
+                      { "chord": "F", "lyric": "dad" }
+                    ],
+                    "rawChord": "C                   Am                  F",
+                    "rawLyric": "Cubierto está de luz, venció a la oscuridad"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "F", "lyric": "Y tiembla a su " },
+                      { "chord": "G", "lyric": "voz, y tiembla a su " },
+                      { "chord": "C", "lyric": "voz" }
+                    ],
+                    "rawChord": "F                   G                   C",
+                    "rawLyric": "Y tiembla a su voz, y tiembla a su voz"
+                  }
+                ]
+              },
+              {
+                "title": "Coro",
+                "type": "coro",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "C", "lyric": "Cuán gran" },
+                      { "chord": "G/B", "lyric": "de es " },
+                      { "chord": "Am", "lyric": "Dios, cántalo" }
+                    ],
+                    "rawChord": "C        G/B    Am",
+                    "rawLyric": "Cuán grande es Dios, cántalo"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Am/G", "lyric": "Cuán gran" },
+                      { "chord": "F", "lyric": "de es Dios, y todos lo ve" },
+                      { "chord": "G", "lyric": "rán" }
+                    ],
+                    "rawChord": "Am/G     F                        G",
+                    "rawLyric": "Cuán grande es Dios, y todos lo verán"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "G", "lyric": "Cuán gran" },
+                      { "chord": "F/G", "lyric": "de es " },
+                      { "chord": "C", "lyric": "Dios" }
+                    ],
+                    "rawChord": "G        F/G    C",
+                    "rawLyric": "Cuán grande es Dios"
+                  }
+                ]
+              },
+              {
+                "title": "Puente",
+                "type": "puente",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "C", "lyric": "Tu nombre sobre to" },
+                      { "chord": "Am", "lyric": "do es, eres digno de ala" },
+                      { "chord": "F", "lyric": "bar" }
+                    ],
+                    "rawChord": "C                   Am                   F",
+                    "rawLyric": "Tu nombre sobre todo es, eres digno de alabar"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "F", "lyric": "Y mi corazón can" },
+                      { "chord": "G", "lyric": "tará, cuán grande es " },
+                      { "chord": "C", "lyric": "Dios" }
+                    ],
+                    "rawChord": "F                   G                    C",
+                    "rawLyric": "Y mi corazón cantará, cuán grande es Dios"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "temprano-yo-te-buscare",
+            "title": "Temprano Yo Te Buscaré",
+            "originalKey": "G",
+            "bpm": 64,
+            "timeSignature": "4/4",
+            "difficulty": "Intermedio",
+            "themes": ["Comunión", "Intimidad", "Oración de Mañana"],
+            "sections": [
+              {
+                "title": "Estrofa 1",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "G", "lyric": "Temprano yo " },
+                      { "chord": "D/F#", "lyric": "te busca" },
+                      { "chord": "Em", "lyric": "ré" }
+                    ],
+                    "rawChord": "G            D/F#        Em",
+                    "rawLyric": "Temprano yo te buscaré"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "C", "lyric": "De madrugada " },
+                      { "chord": "Am7", "lyric": "yo me acerca" },
+                      { "chord": "D", "lyric": "ré a ti" }
+                    ],
+                    "rawChord": "C            Am7         D",
+                    "rawLyric": "De madrugada yo me acercaré a ti"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "G", "lyric": "Mi alma te " },
+                      { "chord": "D/F#", "lyric": "anhela y tiene " },
+                      { "chord": "Em", "lyric": "sed" }
+                    ],
+                    "rawChord": "G           D/F#           Em",
+                    "rawLyric": "Mi alma te anhela y tiene sed"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "C", "lyric": "Para ver tu " },
+                      { "chord": "D", "lyric": "gloria y tu po" },
+                      { "chord": "G", "lyric": "der" }
+                    ],
+                    "rawChord": "C           D             G",
+                    "rawLyric": "Para ver tu gloria y tu poder"
+                  }
+                ]
+              },
+              {
+                "title": "Coro",
+                "type": "coro",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "D", "lyric": "Mi socorro has " },
+                      { "chord": "Em", "lyric": "sido tú" }
+                    ],
+                    "rawChord": "D              Em",
+                    "rawLyric": "Mi socorro has sido tú"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "C", "lyric": "Y en la sombra de " },
+                      { "chord": "Am7", "lyric": "tus alas yo me goza" },
+                      { "chord": "D", "lyric": "ré" }
+                    ],
+                    "rawChord": "C                 Am7               D",
+                    "rawLyric": "Y en la sombra de tus alas yo me gozaré"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "G", "lyric": "Mi alma es" },
+                      { "chord": "D/F#", "lyric": "tá apega" },
+                      { "chord": "Em", "lyric": "da a ti" }
+                    ],
+                    "rawChord": "G         D/F#     Em",
+                    "rawLyric": "Mi alma está apegada a ti"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "C", "lyric": "Porque tu dies" },
+                      { "chord": "D", "lyric": "tra me ha soste" },
+                      { "chord": "G", "lyric": "nido" }
+                    ],
+                    "rawChord": "C             D             G",
+                    "rawLyric": "Porque tu diestra me ha sostenido"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "renuevame",
+            "title": "Renuévame",
+            "originalKey": "D",
+            "bpm": 68,
+            "timeSignature": "4/4",
+            "difficulty": "Fácil",
+            "themes": ["Consagración", "Entrega", "Reflexión"],
+            "sections": [
+              {
+                "title": "Estrofa",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "D", "lyric": "Renuéva" },
+                      { "chord": "G", "lyric": "me, Señor " },
+                      { "chord": "A", "lyric": "Jesús" }
+                    ],
+                    "rawChord": "D       G         A",
+                    "rawLyric": "Renuévame, Señor Jesús"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Bm", "lyric": "Ya no quie" },
+                      { "chord": "Em", "lyric": "ro ser i" },
+                      { "chord": "Asus4", "lyric": "gual" },
+                      { "chord": "A", "lyric": "" }
+                    ],
+                    "rawChord": "Bm        Em      Asus4  A",
+                    "rawLyric": "Ya no quiero ser igual"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "D", "lyric": "Pon en " },
+                      { "chord": "G", "lyric": "mí tu cora" },
+                      { "chord": "A", "lyric": "zón" }
+                    ],
+                    "rawChord": "D      G          A",
+                    "rawLyric": "Pon en mí tu corazón"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Bm", "lyric": "Porque to" },
+                      { "chord": "Em", "lyric": "do lo que soy " },
+                      { "chord": "A", "lyric": "necesita más de ti" }
+                    ],
+                    "rawChord": "Bm        Em            A",
+                    "rawLyric": "Porque todo lo que soy necesita más de ti"
+                  }
+                ]
+              },
+              {
+                "title": "Coro",
+                "type": "coro",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "D", "lyric": "Porque to" },
+                      { "chord": "A/C#", "lyric": "do lo que hay " },
+                      { "chord": "Bm", "lyric": "dentro de mí" }
+                    ],
+                    "rawChord": "D         A/C#          Bm",
+                    "rawLyric": "Porque todo lo que hay dentro de mí"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Em", "lyric": "Necesita ser " },
+                      { "chord": "G", "lyric": "cambiado, Se" },
+                      { "chord": "Asus4", "lyric": "ñor" }
+                    ],
+                    "rawChord": "Em           G          Asus4",
+                    "rawLyric": "Necesita ser cambiado, Señor"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "D", "lyric": "Porque to" },
+                      { "chord": "A/C#", "lyric": "do lo que hay " },
+                      { "chord": "Bm", "lyric": "dentro de mi cora" },
+                      { "chord": "D/A", "lyric": "zón" }
+                    ],
+                    "rawChord": "D         A/C#          Bm                D/A",
+                    "rawLyric": "Porque todo lo que hay dentro de mi corazón"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Em", "lyric": "Necesita " },
+                      { "chord": "A", "lyric": "más de " },
+                      { "chord": "D", "lyric": "ti" }
+                    ],
+                    "rawChord": "Em       A      D",
+                    "rawLyric": "Necesita más de ti"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "maximo-paitan",
+    "name": "Máximo Paitán",
+    "subtitle": "Adoración y Avivamiento • Alabanzas con Poder",
+    "bio": "Reconocido salmista y ministro de alabanza pentecostal, cuyas alabanzas de avivamiento y gozo llenan el corazón con el poder del Espíritu Santo.",
+    "avatarBg": "bg-rose-600",
+    "albums": [
+      {
+        "id": "paitan-avivamiento-poder",
+        "title": "Avivamiento y Poder (Vol. 1)",
+        "year": 2018,
+        "coverGradient": "bg-rose-950",
+        "description": "Alabanzas de avivamiento y gozo para exaltar a Jesucristo en espíritu y en verdad.",
+        "songs": [
+          {
+            "id": "jesucristo-esta-aqui",
+            "title": "Jesucristo Está Aquí (Lléname de Poder)",
+            "originalKey": "A",
+            "bpm": 85,
+            "timeSignature": "4/4",
+            "difficulty": "Fácil",
+            "themes": ["Avivamiento", "Espíritu Santo", "Gozo", "Poder"],
+            "sections": [
+              {
+                "title": "Estrofa",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "A", "lyric": "Jesucristo está aquí " },
+                      { "chord": "E", "lyric": "moviéndose con po" },
+                      { "chord": "F#m", "lyric": "der" }
+                    ],
+                    "rawChord": "A                           E               F#m",
+                    "rawLyric": "Jesucristo está aquí moviéndose con poder"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "A", "lyric": "y su pueblo se goza a" },
+                      { "chord": "Em", "lyric": "llá recibiendo su un" },
+                      { "chord": "F#m", "lyric": "ción" }
+                    ],
+                    "rawChord": "A                           Em              F#m",
+                    "rawLyric": "y su pueblo se goza allá recibiendo su unción"
+                  }
+                ]
+              },
+              {
+                "title": "Coro",
+                "type": "coro",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "A", "lyric": "Lléname lléname de po" },
+                      { "chord": "D", "lyric": "der, Espíritu santo " },
+                      { "chord": "A", "lyric": "lléname" }
+                    ],
+                    "rawChord": "A                                       D           A",
+                    "rawLyric": "Lléname lléname de poder, Espíritu santo lléname"
+                  },
+                  {
+                    "tokens": [
+                      { "lyric": "Lléname lléname de po" },
+                      { "chord": "Em", "lyric": "der, Espíritu santo " },
+                      { "chord": "F#m", "lyric": "lléname" }
+                    ],
+                    "rawChord": "                                        Em          F#m",
+                    "rawLyric": "Lléname lléname de poder, Espíritu santo lléname"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "como-tu-siervo-david",
+            "title": "Como tu Siervo David",
+            "originalKey": "C#m",
+            "bpm": 135,
+            "timeSignature": "4/4",
+            "difficulty": "Fácil",
+            "themes": ["Avivamiento", "Gozo", "Danza", "Poder", "Alabanza Pentecostal"],
+            "sections": [
+              {
+                "title": "Estrofa 1",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "C#m", "lyric": "//Como tu siervo David danza" },
+                      { "chord": "E", "lyric": "re" },
+                      { "chord": "B", "lyric": "mos con tu po" },
+                      { "chord": "E", "lyric": "der" }
+                    ],
+                    "rawChord": "C#m                          E   B                  E",
+                    "rawLyric": "//Como tu siervo David danzaremos con tu poder"
+                  },
+                  {
+                    "tokens": [
+                      { "lyric": "Como tu siervo Daniel ora" },
+                      { "chord": "B", "lyric": "remos a ti Se" },
+                      { "chord": "C#m", "lyric": "ñor//" }
+                    ],
+                    "rawChord": "                             B              C#m",
+                    "rawLyric": "Como tu siervo Daniel oraremos a ti Señor//"
+                  }
+                ]
+              },
+              {
+                "title": "Coro",
+                "type": "coro",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "E", "lyric": "//Cantaremos con panderos nos " },
+                      { "chord": "B", "lyric": "goza" },
+                      { "chord": "E", "lyric": "remos" }
+                    ],
+                    "rawChord": "  E                          B              E",
+                    "rawLyric": "//Cantaremos con panderos nos gozaremos"
+                  },
+                  {
+                    "tokens": [
+                      { "lyric": "Danzaremos con la alabanza en nuestras " },
+                      { "chord": "B", "lyric": "pal" },
+                      { "chord": "C#m", "lyric": "mas//" }
+                    ],
+                    "rawChord": "                             B              C#m",
+                    "rawLyric": "Danzaremos con la alabanza en nuestras palmas//"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "yo-siento-un-fuego",
+            "title": "Yo Siento un Fuego (Fuego Pentecostal)",
+            "originalKey": "Am",
+            "bpm": 130,
+            "timeSignature": "4/4",
+            "difficulty": "Fácil",
+            "themes": ["Avivamiento", "Fuego", "Espíritu Santo", "Gozo Pentecostal"],
+            "sections": [
+              {
+                "title": "Estrofa",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Am", "lyric": "Yo siento un fuego que me que" },
+                      { "chord": "E", "lyric": "ma, un gozo que me " },
+                      { "chord": "Am", "lyric": "llena" }
+                    ],
+                    "rawChord": "Am                          E                   Am",
+                    "rawLyric": "Yo siento un fuego que me quema, un gozo que me llena"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Am", "lyric": "Y el Espíritu Santo mo" },
+                      { "chord": "E", "lyric": "viéndose en mi " },
+                      { "chord": "Am", "lyric": "ser" }
+                    ],
+                    "rawChord": "Am                   E                  Am",
+                    "rawLyric": "Y el Espíritu Santo moviéndose en mi ser"
+                  }
+                ]
+              },
+              {
+                "title": "Coro",
+                "type": "coro",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Am", "lyric": "//Oh gloria a Dios, oh ale" },
+                      { "chord": "Dm", "lyric": "luya" }
+                    ],
+                    "rawChord": "Am                         Dm",
+                    "rawLyric": "//Oh gloria a Dios, oh aleluya"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "E", "lyric": "Moviéndose en mi " },
+                      { "chord": "Am", "lyric": "ser//" }
+                    ],
+                    "rawChord": "E                Am",
+                    "rawLyric": "Moviéndose en mi ser//"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "jesus-adrian-romero",
+    "name": "Jesús Adrián Romero",
+    "subtitle": "Poesía y Adoración • Baladas de Piano",
+    "bio": "Sus canciones destacan por una lírica honesta y melodías de piano envolventes que expresan dependencia total del creador.",
+    "avatarBg": "bg-amber-600",
+    "albums": [
+      {
+        "id": "jar-el-aire-de-tu-casa",
+        "title": "El Aire de tu Casa (2005)",
+        "year": 2005,
+        "coverGradient": "bg-amber-950",
+        "description": "Baladas emblemáticas que revolucionaron el acompañamiento de piano en la música cristiana.",
+        "songs": [
+          {
+            "id": "mi-universo",
+            "title": "Mi Universo",
+            "originalKey": "C",
+            "bpm": 68,
+            "timeSignature": "4/4",
+            "difficulty": "Intermedio",
+            "themes": ["Entrega Total", "Prioridad", "Íntimo"],
+            "sections": [
+              {
+                "title": "Estrofa 1",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "C", "lyric": "Que seas mi uni" },
+                      { "chord": "G/B", "lyric": "verso" }
+                    ],
+                    "rawChord": "C              G/B",
+                    "rawLyric": "Que seas mi universo"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Am", "lyric": "No quiero darte so" },
+                      { "chord": "Em", "lyric": "lo un rato de mi tiem" },
+                      { "chord": "F", "lyric": "po" }
+                    ],
+                    "rawChord": "Am                 Em                F",
+                    "rawLyric": "No quiero darte solo un rato de mi tiempo"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Dm", "lyric": "No quiero separarte un día " },
+                      { "chord": "G", "lyric": "solamente" }
+                    ],
+                    "rawChord": "Dm                         G",
+                    "rawLyric": "No quiero separarte un día solamente"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "C", "lyric": "Que seas mi uni" },
+                      { "chord": "G/B", "lyric": "verso" }
+                    ],
+                    "rawChord": "C              G/B",
+                    "rawLyric": "Que seas mi universo"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Am", "lyric": "No quiero darte mis " },
+                      { "chord": "Em", "lyric": "palabras como un eco" },
+                      { "chord": "F", "lyric": "" }
+                    ],
+                    "rawChord": "Am                  Em              F",
+                    "rawLyric": "No quiero darte mis palabras como un eco"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Dm", "lyric": "Quiero vivir para ti " },
+                      { "chord": "G", "lyric": "en cada momento" }
+                    ],
+                    "rawChord": "Dm                   G",
+                    "rawLyric": "Quiero vivir para ti en cada momento"
+                  }
+                ]
+              },
+              {
+                "title": "Coro",
+                "type": "coro",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "C", "lyric": "Que seas mi uni" },
+                      { "chord": "G/B", "lyric": "verso" }
+                    ],
+                    "rawChord": "C              G/B",
+                    "rawLyric": "Que seas mi universo"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Am", "lyric": "Que seas todo lo " },
+                      { "chord": "Em", "lyric": "que siento y lo que " },
+                      { "chord": "F", "lyric": "pienso" }
+                    ],
+                    "rawChord": "Am               Em                 F",
+                    "rawLyric": "Que seas todo lo que siento y lo que pienso"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Dm", "lyric": "Que seas el primer aliento " },
+                      { "chord": "G", "lyric": "en la mañana" }
+                    ],
+                    "rawChord": "Dm                         G",
+                    "rawLyric": "Que seas el primer aliento en la mañana"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "C", "lyric": "Y la luz en mi ven" },
+                      { "chord": "G", "lyric": "tana" }
+                    ],
+                    "rawChord": "C                  G",
+                    "rawLyric": "Y la luz en mi ventana"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "sumergeme",
+            "title": "Sumérgeme",
+            "originalKey": "C",
+            "bpm": 62,
+            "timeSignature": "4/4",
+            "difficulty": "Fácil",
+            "themes": ["Restauración", "Sed de Dios", "Espíritu Santo"],
+            "sections": [
+              {
+                "title": "Estrofa 1",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "C", "lyric": "Cansado del ca" },
+                      { "chord": "Em", "lyric": "mino, sediento de ti" }
+                    ],
+                    "rawChord": "C              Em",
+                    "rawLyric": "Cansado del camino, sediento de ti"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "F", "lyric": "Un desierto he cru" },
+                      { "chord": "Dm", "lyric": "zado, sin fuerzas he que" },
+                      { "chord": "G", "lyric": "dado, vengo a ti" }
+                    ],
+                    "rawChord": "F                  Dm                  G",
+                    "rawLyric": "Un desierto he cruzado, sin fuerzas he quedado, vengo a ti"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "C", "lyric": "Luché como sol" },
+                      { "chord": "Em", "lyric": "dado, y a veces sufrí" }
+                    ],
+                    "rawChord": "C              Em",
+                    "rawLyric": "Luché como soldado, y a veces sufrí"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "F", "lyric": "Y aunque la lucha he ga" },
+                      { "chord": "Dm", "lyric": "nado, mi armadura he desgas" },
+                      { "chord": "G", "lyric": "tado, vengo a ti" }
+                    ],
+                    "rawChord": "F                       Dm                  G",
+                    "rawLyric": "Y aunque la lucha he ganado, mi armadura he desgastado, vengo a ti"
+                  }
+                ]
+              },
+              {
+                "title": "Coro",
+                "type": "coro",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "C", "lyric": "Sumérgeme, " },
+                      { "chord": "Em", "lyric": "en el río de tu es" },
+                      { "chord": "F", "lyric": "píritu" }
+                    ],
+                    "rawChord": "C           Em                 F",
+                    "rawLyric": "Sumérgeme, en el río de tu espíritu"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Dm", "lyric": "Necesito refrs" },
+                      { "chord": "G", "lyric": "car este seco cora" },
+                      { "chord": "C", "lyric": "zón" }
+                    ],
+                    "rawChord": "Dm             G                  C",
+                    "rawLyric": "Necesito refrescar este seco corazón"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Em", "lyric": "Sediento de " },
+                      { "chord": "F", "lyric": "ti" }
+                    ],
+                    "rawChord": "Em          F",
+                    "rawLyric": "Sediento de ti"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "miel-san-marcos",
+    "name": "Miel San Marcos",
+    "subtitle": "Adoración Congregacional • Alabanza Vibrante",
+    "bio": "Uno de los ministerios más trascendentales de adoración contemporánea, cuyas canciones unen arreglos potentes de piano e himnos de victoria.",
+    "avatarBg": "bg-cyan-600",
+    "albums": [
+      {
+        "id": "msm-como-en-el-cielo",
+        "title": "Como en el Cielo (Vol. Especial)",
+        "year": 2015,
+        "coverGradient": "bg-blue-950",
+        "description": "Canciones de exaltación con profundas progresiones armónicas en el teclado.",
+        "songs": [
+          {
+            "id": "no-hay-lugar-mas-alto",
+            "title": "No Hay Lugar Más Alto",
+            "originalKey": "A",
+            "bpm": 70,
+            "timeSignature": "4/4",
+            "difficulty": "Avanzado",
+            "themes": ["Humildad", "Presencia de Dios", "Postración"],
+            "sections": [
+              {
+                "title": "Estrofa 1",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "A", "lyric": "A tus pies arde mi cora" },
+                      { "chord": "E/G#", "lyric": "zón" }
+                    ],
+                    "rawChord": "A                       E/G#",
+                    "rawLyric": "A tus pies arde mi corazón"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "F#m", "lyric": "A tus pies entrego lo que " },
+                      { "chord": "D", "lyric": "soy" }
+                    ],
+                    "rawChord": "F#m                       D",
+                    "rawLyric": "A tus pies entrego lo que soy"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "A", "lyric": "Es ese lugar de mi seguri" },
+                      { "chord": "E/G#", "lyric": "dad" }
+                    ],
+                    "rawChord": "A                         E/G#",
+                    "rawLyric": "Es ese lugar de mi seguridad"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "F#m", "lyric": "Donde nadie me puede sepa" },
+                      { "chord": "D", "lyric": "rar" }
+                    ],
+                    "rawChord": "F#m                       D",
+                    "rawLyric": "Donde nadie me puede separar"
+                  }
+                ]
+              },
+              {
+                "title": "Pre-Coro",
+                "type": "pre-coro",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "D", "lyric": "Me perdo" },
+                      { "chord": "E", "lyric": "naste, me acer" },
+                      { "chord": "F#m", "lyric": "caste a tu pre" },
+                      { "chord": "E", "lyric": "sencia" }
+                    ],
+                    "rawChord": "D        E            F#m            E",
+                    "rawLyric": "Me perdonaste, me acercaste a tu presencia"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "D", "lyric": "Me levan" },
+                      { "chord": "E", "lyric": "taste, hoy me pos" },
+                      { "chord": "F#m", "lyric": "tro ado" },
+                      { "chord": "E", "lyric": "rarte" }
+                    ],
+                    "rawChord": "D        E            F#m     E",
+                    "rawLyric": "Me levantaste, hoy me postro adorarte"
+                  }
+                ]
+              },
+              {
+                "title": "Coro",
+                "type": "coro",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "D", "lyric": "No hay lugar más " },
+                      { "chord": "E", "lyric": "alto, más grande" }
+                    ],
+                    "rawChord": "D                 E",
+                    "rawLyric": "No hay lugar más alto, más grande"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "F#m", "lyric": "Que estar a tus pies, " },
+                      { "chord": "A/C#", "lyric": "que estar a tus pies" }
+                    ],
+                    "rawChord": "F#m                   A/C#",
+                    "rawLyric": "Que estar a tus pies, que estar a tus pies"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "D", "lyric": "No hay lugar más " },
+                      { "chord": "E", "lyric": "alto, más grande" }
+                    ],
+                    "rawChord": "D                 E",
+                    "rawLyric": "No hay lugar más alto, más grande"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "F#m", "lyric": "Que estar a tus pies, " },
+                      { "chord": "A/C#", "lyric": "Jesús" }
+                    ],
+                    "rawChord": "F#m                   A/C#",
+                    "rawLyric": "Que estar a tus pies, Jesús"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "elevation-worship",
+    "name": "Elevation Worship en Español",
+    "subtitle": "Himnos Contemporáneos • Atmósferas Celestiales",
+    "bio": "Canciones de adoración atmosférica donde el piano y los sintetizadores crean un espacio profundo para el encuentro con Dios.",
+    "avatarBg": "bg-emerald-600",
+    "albums": [
+      {
+        "id": "elevation-lo-haras-otra-vez",
+        "title": "Lo Harás Otra Vez (Vol. Acústico)",
+        "year": 2020,
+        "coverGradient": "bg-teal-950",
+        "description": "Acordes sublimes y atmósferas envolventes diseñadas específicamente para tecladistas y solistas.",
+        "songs": [
+          {
+            "id": "oceanos",
+            "title": "Océanos (Donde Mis Pies Pueden Fallar)",
+            "originalKey": "D",
+            "bpm": 64,
+            "timeSignature": "4/4",
+            "difficulty": "Intermedio",
+            "themes": ["Fe", "Confianza", "Llamado"],
+            "sections": [
+              {
+                "title": "Estrofa 1",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Bm", "lyric": "Tu voz me " },
+                      { "chord": "A/C#", "lyric": "llama a las " },
+                      { "chord": "D", "lyric": "aguas" }
+                    ],
+                    "rawChord": "Bm        A/C#        D",
+                    "rawLyric": "Tu voz me llama a las aguas"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "A", "lyric": "Donde mis pies pueden fa" },
+                      { "chord": "G", "lyric": "llar" }
+                    ],
+                    "rawChord": "A                        G",
+                    "rawLyric": "Donde mis pies pueden fallar"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Bm", "lyric": "Y ahí te en" },
+                      { "chord": "A/C#", "lyric": "cuentro en lo in" },
+                      { "chord": "D", "lyric": "cierto" }
+                    ],
+                    "rawChord": "Bm          A/C#      D",
+                    "rawLyric": "Y ahí te encuentro en lo incierto"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "A", "lyric": "Caminaré sobre el " },
+                      { "chord": "G", "lyric": "mar" }
+                    ],
+                    "rawChord": "A                 G",
+                    "rawLyric": "Caminaré sobre el mar"
+                  }
+                ]
+              },
+              {
+                "title": "Coro",
+                "type": "coro",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "G", "lyric": "A tu " },
+                      { "chord": "D", "lyric": "nombre clama" },
+                      { "chord": "A", "lyric": "ré" }
+                    ],
+                    "rawChord": "G    D          A",
+                    "rawLyric": "A tu nombre clamaré"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "G", "lyric": "En ti mis " },
+                      { "chord": "D", "lyric": "ojos fija" },
+                      { "chord": "A", "lyric": "ré" }
+                    ],
+                    "rawChord": "G         D          A",
+                    "rawLyric": "En ti mis ojos fijaré"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "G", "lyric": "En tempes" },
+                      { "chord": "D", "lyric": "tad, descansaré en tu " },
+                      { "chord": "A", "lyric": "poder" }
+                    ],
+                    "rawChord": "G         D                    A",
+                    "rawLyric": "En tempestad, descansaré en tu poder"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "G", "lyric": "Pues tuyo " },
+                      { "chord": "A", "lyric": "soy, hasta el fi" },
+                      { "chord": "Bm", "lyric": "nal" }
+                    ],
+                    "rawChord": "G         A              Bm",
+                    "rawLyric": "Pues tuyo soy, hasta el final"
+                  }
+                ]
+              },
+              {
+                "title": "Puente",
+                "type": "puente",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Bm", "lyric": "Que tu espíritu me guíe sin fro" },
+                      { "chord": "G", "lyric": "nteras" }
+                    ],
+                    "rawChord": "Bm                              G",
+                    "rawLyric": "Que tu espíritu me guíe sin fronteras"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "D", "lyric": "Más allá de las barreras a donde " },
+                      { "chord": "A", "lyric": "tú me llames" }
+                    ],
+                    "rawChord": "D                                A",
+                    "rawLyric": "Más allá de las barreras a donde tú me llames"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Bm", "lyric": "Tú me llevas más allá de lo so" },
+                      { "chord": "G", "lyric": "ñado" }
+                    ],
+                    "rawChord": "Bm                             G",
+                    "rawLyric": "Tú me llevas más allá de lo soñado"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "D", "lyric": "Donde puedo estar confiado al es" },
+                      { "chord": "A", "lyric": "tar en tu presencia" }
+                    ],
+                    "rawChord": "D                                A",
+                    "rawLyric": "Donde puedo estar confiado al estar en tu presencia"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "la-bendicion",
+            "title": "La Bendición (The Blessing)",
+            "originalKey": "B",
+            "bpm": 70,
+            "timeSignature": "4/4",
+            "difficulty": "Fácil",
+            "themes": ["Bendición", "Promesa", "Gracia"],
+            "sections": [
+              {
+                "title": "Estrofa 1",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "B", "lyric": "Dios te bendiga y te " },
+                      { "chord": "E", "lyric": "guarde" }
+                    ],
+                    "rawChord": "B                    E",
+                    "rawLyric": "Dios te bendiga y te guarde"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "B/D#", "lyric": "Haga resplandecer su " },
+                      { "chord": "F#", "lyric": "rostro sobre " },
+                      { "chord": "G#m", "lyric": "ti" }
+                    ],
+                    "rawChord": "B/D#                 F#            G#m",
+                    "rawLyric": "Haga resplandecer su rostro sobre ti"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "E", "lyric": "Y tenga mise" },
+                      { "chord": "B", "lyric": "ricordia de ti, y te " },
+                      { "chord": "F#", "lyric": "dé " },
+                      { "chord": "B", "lyric": "paz" }
+                    ],
+                    "rawChord": "E            B               F# B",
+                    "rawLyric": "Y tenga misericordia de ti, y te dé paz"
+                  }
+                ]
+              },
+              {
+                "title": "Coro (Amén)",
+                "type": "coro",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "G#m", "lyric": "A" },
+                      { "chord": "E", "lyric": "mén, a" },
+                      { "chord": "B", "lyric": "mén, a" },
+                      { "chord": "F#", "lyric": "mén" }
+                    ],
+                    "rawChord": "G#m   E    B    F#",
+                    "rawLyric": "Amén, amén, amén"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "G#m", "lyric": "A" },
+                      { "chord": "E", "lyric": "mén, a" },
+                      { "chord": "B", "lyric": "mén, a" },
+                      { "chord": "F#", "lyric": "mén" }
+                    ],
+                    "rawChord": "G#m   E    B    F#",
+                    "rawLyric": "Amén, amén, amén"
+                  }
+                ]
+              },
+              {
+                "title": "Puente (Que su favor te acompañe)",
+                "type": "puente",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "G#m", "lyric": "Que su favor te acom" },
+                      { "chord": "E", "lyric": "pañe hasta mil gene" },
+                      { "chord": "B", "lyric": "raciones" }
+                    ],
+                    "rawChord": "G#m                  E                   B",
+                    "rawLyric": "Que su favor te acompañe hasta mil generaciones"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "F#", "lyric": "A tu familia y a tus " },
+                      { "chord": "G#m", "lyric": "hijos, y a los " },
+                      { "chord": "E", "lyric": "hijos de tus " },
+                      { "chord": "B", "lyric": "hijos" }
+                    ],
+                    "rawChord": "F#                   G#m           E             B",
+                    "rawLyric": "A tu familia y a tus hijos, y a los hijos de tus hijos"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "F#", "lyric": "Y su presencia te ilu" },
+                      { "chord": "G#m", "lyric": "mine, por detrás y por de" },
+                      { "chord": "E", "lyric": "lante" }
+                    ],
+                    "rawChord": "F#                   G#m                      E",
+                    "rawLyric": "Y su presencia te ilumine, por detrás y por delante"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "B", "lyric": "A tu lado, a tu alre" },
+                      { "chord": "F#", "lyric": "dedor, él va con" },
+                      { "chord": "G#m", "lyric": "tigo" }
+                    ],
+                    "rawChord": "B                    F#                 G#m",
+                    "rawLyric": "A tu lado, a tu alrededor, él va contigo"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
