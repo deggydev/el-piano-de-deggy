@@ -50,201 +50,85 @@ export const SongViewer: React.FC<SongViewerProps> = ({
   const currentKey = transposeChord(song.originalKey, semitones);
 
   return (
-    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8 animate-fadeIn">
-      {/* Back & Breadcrumb */}
-      <div className="flex items-center justify-between">
-        <button
-          onClick={onBack}
-          className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900/90 hover:bg-slate-800 border border-slate-800 text-slate-300 hover:text-white font-semibold text-sm transition-all shadow-md group"
-        >
-          <Icon icon="lucide:arrow-left" className="w-4 h-4 text-purple-400 group-hover:-translate-x-1 transition-transform" />
-          <span>Volver al Catálogo</span>
-        </button>
+    <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-6 sm:py-8 space-y-6 sm:space-y-8 animate-fadeIn pb-32">
+      {/* 1. Cabecera Superior: Volver, Breadcrumb y Título Minimalista */}
+      <div className="space-y-4">
+        <div className="flex items-center justify-between">
+          <button
+            onClick={onBack}
+            className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-slate-900/90 hover:bg-slate-800 border border-slate-800 text-slate-300 hover:text-white font-semibold text-sm transition-all shadow-md group cursor-pointer"
+          >
+            <Icon icon="lucide:arrow-left" className="w-4 h-4 text-amber-400 group-hover:-translate-x-1 transition-transform" />
+            <span>Volver al Catálogo</span>
+          </button>
 
-        <div className="hidden sm:flex items-center gap-2 text-xs font-bold text-slate-400">
-          <span>{authorName}</span>
-          <Icon icon="lucide:chevron-right" className="w-3.5 h-3.5 text-slate-600" />
-          <span className="text-purple-400">{albumTitle}</span>
+          <div className="hidden sm:flex items-center gap-2 text-xs font-bold text-slate-400">
+            <span>{authorName}</span>
+            <Icon icon="lucide:chevron-right" className="w-3.5 h-3.5 text-slate-600" />
+            <span className="text-amber-400">{albumTitle}</span>
+          </div>
         </div>
-      </div>
 
-      {/* Song Header Card */}
-      <div className="relative bg-slate-900 border border-slate-800/80 rounded-3xl p-4 sm:p-8 shadow-2xl overflow-hidden">
-        <div className="flex flex-col md:flex-row md:items-center justify-between gap-6 relative z-10">
-          <div className="space-y-3">
-            <div className="flex flex-wrap items-center gap-2.5">
-              <span className="px-3 py-1 rounded-full bg-purple-500/20 border border-purple-500/40 text-purple-300 text-xs font-extrabold uppercase tracking-wider flex items-center gap-1.5">
-                <Icon icon="mdi:piano" className="w-4 h-4 text-amber-400" />
+        {/* Título de la Alabanza (Compacto e impactante sin robar espacio vertical) */}
+        <div className="bg-slate-800/90 border border-slate-700/80 rounded-3xl p-5 sm:p-6 shadow-xl flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+          <div className="space-y-1.5 min-w-0">
+            <div className="flex flex-wrap items-center gap-2">
+              <span className="px-2.5 py-0.5 rounded-full bg-slate-900 border border-amber-400/40 text-amber-300 text-[11px] font-extrabold uppercase tracking-wider flex items-center gap-1">
+                <Icon icon="mdi:piano" className="w-3.5 h-3.5 text-amber-400" />
                 <span>Acordes para Piano</span>
               </span>
-              <span className="px-3 py-1 rounded-full bg-slate-800 text-slate-300 text-xs font-bold">
+              <span className="px-2.5 py-0.5 rounded-full bg-slate-900 text-slate-200 border border-slate-700 text-[11px] font-bold">
                 {song.difficulty}
               </span>
             </div>
 
-            <h1 className="text-3xl sm:text-5xl font-black text-white tracking-tight">
+            <h1 className="text-2xl sm:text-4xl font-black text-white tracking-tight break-words leading-tight">
               {song.title}
             </h1>
 
-            <p className="text-base sm:text-lg font-semibold text-purple-300">
+            <p className="text-sm sm:text-base font-semibold text-amber-400">
               {authorName} <span className="text-slate-400 font-normal">({albumTitle})</span>
             </p>
           </div>
 
-          <div className="flex flex-wrap md:flex-col justify-end gap-3 bg-slate-950/80 border border-slate-800/80 p-4 rounded-2xl md:min-w-[200px]">
-            <div className="flex items-center justify-between gap-4 text-sm">
-              <span className="text-slate-400 font-medium">Tono Original:</span>
-              <span className="font-mono font-bold text-white bg-slate-900 px-2.5 py-0.5 rounded border border-slate-800">
-                {song.originalKey}
-              </span>
+          <div className="flex items-center gap-3 shrink-0 self-start sm:self-center bg-slate-900/80 px-3.5 py-2 rounded-2xl border border-slate-700/80">
+            <div className="text-center">
+              <span className="text-[10px] uppercase font-bold text-slate-400 block tracking-wider">Tono</span>
+              <span className="font-mono font-black text-amber-400 text-lg">{currentKey}</span>
             </div>
-            <div className="flex items-center justify-between gap-4 text-sm">
-              <span className="text-slate-400 font-medium">Tono Actual:</span>
-              <span className="font-mono font-extrabold text-amber-400 bg-amber-500/10 px-2.5 py-0.5 rounded border border-amber-500/30">
-                {currentKey}
-              </span>
-            </div>
-            <div className="flex items-center justify-between gap-4 text-sm border-t border-slate-800/80 pt-2">
-              <span className="text-slate-400 font-medium">Tiempo:</span>
-              <span className="font-semibold text-slate-200">
-                {song.bpm} BPM ({song.timeSignature})
-              </span>
+            <div className="h-6 w-px bg-slate-700" />
+            <div className="text-center">
+              <span className="text-[10px] uppercase font-bold text-slate-400 block tracking-wider">Ritmo</span>
+              <span className="font-semibold text-slate-200 text-sm">{song.bpm} BPM</span>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Pianist Toolbar (Non-sticky as requested) */}
-      <div className="bg-slate-950/90 border border-purple-500/30 rounded-2xl p-4 shadow-2xl flex flex-wrap items-center justify-between gap-4">
-        {/* Transposition Controls */}
-        <div className="flex items-center gap-2 sm:gap-3 bg-slate-900 p-1.5 rounded-xl border border-slate-800">
-          <span className="text-xs font-bold text-slate-400 px-2 hidden sm:inline">
-            Transponer:
-          </span>
-
-          <button
-            onClick={() => setSemitones(semitones - 1)}
-            className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-black text-sm flex items-center justify-center transition-colors shadow"
-            title="Bajar 1 semitono"
-          >
-            -0.5
-          </button>
-
-          <div className="px-3 text-center min-w-[70px]">
-            <span className="text-xs text-slate-400 block font-semibold">Tono</span>
-            <span className="font-mono font-black text-amber-400 text-base block">
-              {currentKey}
-            </span>
-          </div>
-
-          <button
-            onClick={() => setSemitones(semitones + 1)}
-            className="w-9 h-9 rounded-lg bg-slate-800 hover:bg-slate-700 text-white font-black text-sm flex items-center justify-center transition-colors shadow"
-            title="Subir 1 semitono"
-          >
-            +0.5
-          </button>
-
-          {semitones !== 0 && (
-            <button
-              onClick={() => setSemitones(0)}
-              className="px-2.5 py-1.5 rounded-lg bg-purple-600/20 hover:bg-purple-600 text-purple-300 hover:text-white text-xs font-bold transition-all ml-1"
-              title="Volver al tono original"
-            >
-              Reset
-            </button>
-          )}
-        </div>
-
-        {/* Chords Toggle */}
-        <div className="flex items-center gap-2">
-          <button
-            onClick={() => setShowChords(!showChords)}
-            className={`px-4 py-2 rounded-xl text-sm font-bold flex items-center gap-2 transition-all ${
-              showChords
-                ? 'bg-purple-600 text-white shadow-md shadow-purple-600/30'
-                : 'bg-slate-900 text-slate-400 border border-slate-800 hover:text-slate-200'
-            }`}
-          >
-            <Icon icon={showChords ? 'mdi:piano' : 'lucide:eye-off'} className="w-4 h-4" />
-            <span>{showChords ? 'Acordes Visibles' : 'Solo Letra'}</span>
-          </button>
-        </div>
-
-        {/* Font Size & Auto-Scroll Controls */}
-        <div className="flex items-center gap-3">
-          {/* Font size buttons */}
-          <div className="flex items-center bg-slate-900 rounded-xl border border-slate-800 p-1">
-            <button
-              onClick={() => setFontSize(Math.max(14, fontSize - 2))}
-              className="px-2.5 py-1.5 text-slate-300 hover:text-white font-bold text-xs"
-              title="Disminuir tamaño de letra"
-            >
-              A-
-            </button>
-            <span className="text-xs font-mono px-2 text-slate-400">{fontSize}px</span>
-            <button
-              onClick={() => setFontSize(Math.min(28, fontSize + 2))}
-              className="px-2.5 py-1.5 text-slate-300 hover:text-white font-bold text-sm"
-              title="Aumentar tamaño de letra"
-            >
-              A+
-            </button>
-          </div>
-
-          {/* Auto-Scroll */}
-          <div className="flex items-center gap-1.5">
-            <button
-              onClick={() => setIsScrolling(!isScrolling)}
-              className={`px-4 py-2 rounded-xl text-sm font-bold flex items-center gap-2 transition-all ${
-                isScrolling
-                  ? 'bg-amber-500 text-slate-950 animate-pulse shadow-lg shadow-amber-500/30'
-                  : 'bg-slate-900 border border-slate-800 text-slate-300 hover:text-white'
-              }`}
-            >
-              <Icon icon={isScrolling ? 'lucide:pause' : 'lucide:play'} className="w-4 h-4" />
-              <span className="hidden sm:inline">Auto-Scroll</span>
-            </button>
-
-            {isScrolling && (
-              <button
-                onClick={() => setScrollSpeed(scrollSpeed === 3 ? 1 : scrollSpeed + 1)}
-                className="px-2.5 py-2 rounded-xl bg-slate-900 border border-slate-800 text-xs font-bold text-amber-400"
-                title="Cambiar velocidad del auto-scroll"
-              >
-                {scrollSpeed === 1 ? '1x' : scrollSpeed === 2 ? '2x' : '3x'}
-              </button>
-            )}
-          </div>
-        </div>
-      </div>
-
-      {/* Mini Piano Chord Modal / Tooltip when clicking a chord */}
+      {/* Mini Piano Chord Modal / Tooltip cuando el usuario inspecciona un acorde */}
       {inspectedChord && (
-        <div className="fixed bottom-6 right-6 z-50 bg-slate-900/95 border border-purple-500/60 rounded-2xl p-5 shadow-2xl backdrop-blur-xl max-w-xs animate-slideUp">
+        <div className="fixed bottom-24 right-6 z-50 bg-slate-900/95 border border-amber-400/60 rounded-2xl p-5 shadow-2xl backdrop-blur-xl max-w-xs animate-slideUp">
           <div className="flex items-center justify-between pb-3 border-b border-slate-800 mb-3">
             <div className="flex items-center gap-2">
-              <Icon icon="mdi:piano" className="w-5 h-5 text-purple-400" />
+              <Icon icon="mdi:piano" className="w-5 h-5 text-amber-400" />
               <span className="font-extrabold text-white text-base">
                 Acorde: <span className="text-amber-400 font-mono">{inspectedChord}</span>
               </span>
             </div>
             <button
               onClick={() => setInspectedChord(null)}
-              className="text-slate-400 hover:text-white"
+              className="text-slate-400 hover:text-white cursor-pointer"
             >
               <Icon icon="lucide:x" className="w-4 h-4" />
             </button>
           </div>
           <div className="space-y-2 text-xs text-slate-300">
-            <p>
-              Notas que forman el acorde:
-            </p>
+            <p>Notas que forman el acorde en el piano:</p>
             <div className="flex items-center gap-1.5 flex-wrap">
               {getChordNotes(inspectedChord).map((note, idx) => (
                 <span
                   key={idx}
-                  className="px-2.5 py-1 rounded bg-purple-600 text-white font-mono font-bold"
+                  className="px-2.5 py-1 rounded bg-amber-400 text-[#212121] font-mono font-black shadow"
                 >
                   {note}
                 </span>
@@ -257,9 +141,9 @@ export const SongViewer: React.FC<SongViewerProps> = ({
         </div>
       )}
 
-      {/* Song Sections / Lyrics Display */}
+      {/* 2. EN PRIMERA INSTANCIA: Las Letras con sus respectivos Acordes */}
       <div
-        className="space-y-4 sm:space-y-6 pb-16"
+        className="space-y-4 sm:space-y-6"
         style={{ fontSize: `${fontSize}px` }}
       >
         {song.sections.map((section, secIndex) => {
@@ -270,35 +154,35 @@ export const SongViewer: React.FC<SongViewerProps> = ({
           return (
             <div
               key={secIndex}
-              className={`rounded-3xl p-4 sm:p-8 border transition-all ${
+              className={`rounded-3xl p-5 sm:p-8 border transition-all ${
                 isCoro
-                  ? 'bg-slate-900 border-amber-500/40 shadow-xl shadow-amber-950/20'
+                  ? 'bg-slate-800 border-amber-400/60 shadow-xl shadow-amber-950/20'
                   : isPuente
-                  ? 'bg-slate-900 border-teal-500/40 shadow-lg'
+                  ? 'bg-slate-800 border-teal-400/60 shadow-lg'
                   : isIntro
-                  ? 'bg-slate-900/40 border-slate-800/80 border-dashed'
-                  : 'bg-slate-900/60 border-slate-800/80'
+                  ? 'bg-slate-800/80 border-slate-700 border-dashed'
+                  : 'bg-slate-800 border-slate-700 shadow-md'
               }`}
             >
-              {/* Section Badge */}
-              <div className="flex items-center justify-between mb-2 sm:mb-4">
+              {/* Insignia de la sección (Estrofa, Coro, Puente) */}
+              <div className="flex items-center justify-between mb-3 sm:mb-4">
                 <span
                   className={`px-3.5 py-1 rounded-xl font-black text-xs uppercase tracking-wider ${
                     isCoro
-                      ? 'bg-amber-500/20 text-amber-300 border border-amber-500/40'
+                      ? 'bg-amber-400/20 text-amber-300 border border-amber-400/40'
                       : isPuente
                       ? 'bg-teal-500/20 text-teal-300 border border-teal-500/40'
                       : isIntro
-                      ? 'bg-slate-800 text-slate-300 border border-slate-700'
-                      : 'bg-purple-500/20 text-purple-300 border border-purple-500/40'
+                      ? 'bg-slate-900 text-slate-300 border border-slate-700'
+                      : 'bg-slate-900 text-amber-300 border border-slate-700'
                   }`}
                 >
                   {section.title}
                 </span>
               </div>
 
-              {/* Lines inside Section */}
-              <div className="space-y-2 sm:space-y-4 leading-snug">
+              {/* Líneas de Letra y Acordes */}
+              <div className="space-y-3 sm:space-y-5 leading-snug">
                 {section.lines.map((line, lineIndex) => {
                   const groupedTokens = line.tokens.reduce((acc, token) => {
                     if (acc.length === 0) {
@@ -332,18 +216,18 @@ export const SongViewer: React.FC<SongViewerProps> = ({
                                 key={tokIndex}
                                 className="inline-flex flex-col justify-end max-w-full shrink-0"
                               >
-                                {/* Chord above lyric */}
+                                {/* Acorde encima de la sílaba/letra */}
                                 {showChords && transposedTokenChord && (
                                   <button
                                     onClick={() => setInspectedChord(transposedTokenChord)}
-                                    className="font-mono font-black text-amber-400 sm:text-amber-300 hover:text-white bg-amber-500/10 sm:bg-transparent hover:bg-purple-600 px-1 py-0.5 rounded transition-all text-sm sm:text-base cursor-pointer self-start mb-0.5 leading-none shrink-0"
+                                    className="font-mono font-black text-amber-400 sm:text-amber-300 hover:text-[#212121] bg-amber-400/10 sm:bg-transparent hover:bg-amber-400 px-1 py-0.5 rounded transition-all text-sm sm:text-base cursor-pointer self-start mb-0.5 leading-none shrink-0"
                                     title={`Ver teclas para acorde ${transposedTokenChord}`}
                                   >
                                     {transposedTokenChord}
                                   </button>
                                 )}
 
-                                {/* Lyric Segment */}
+                                {/* Segmento de Letra */}
                                 <span className="text-slate-100 font-medium whitespace-pre-wrap break-words leading-tight max-w-full">
                                   {token.lyric}
                                 </span>
@@ -359,6 +243,200 @@ export const SongViewer: React.FC<SongViewerProps> = ({
             </div>
           );
         })}
+      </div>
+
+      {/* 3. DEBAJO DE LAS LETRAS: Todas las opciones y herramientas del pianista */}
+      <div className="bg-slate-800/95 border border-slate-700 rounded-3xl p-6 sm:p-8 shadow-2xl space-y-6 mt-8">
+        <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-3 border-b border-slate-700/80 pb-4">
+          <div className="flex items-center gap-2.5">
+            <div className="w-8 h-8 rounded-xl bg-amber-400/10 border border-amber-400/30 flex items-center justify-center text-amber-400">
+              <Icon icon="lucide:sliders-horizontal" className="w-4 h-4" />
+            </div>
+            <h3 className="font-black text-white text-lg tracking-wide">
+              Herramientas y Controles de la Alabanza
+            </h3>
+          </div>
+          <span className="text-xs font-semibold text-slate-400">
+            Ajusta la transposición, tamaño y visualización a tu gusto
+          </span>
+        </div>
+
+        {/* Tarjetas informativas de Tono y Tiempo debajo de la letra */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+          <div className="bg-slate-900/80 border border-slate-700/80 p-4 rounded-2xl flex items-center justify-between">
+            <div>
+              <span className="text-xs text-slate-400 block font-medium">Tono Original</span>
+              <span className="text-sm font-semibold text-slate-200">Como fue grabada</span>
+            </div>
+            <span className="font-mono font-extrabold text-white bg-slate-800 px-3 py-1 rounded-xl border border-slate-700 text-base">
+              {song.originalKey}
+            </span>
+          </div>
+
+          <div className="bg-slate-900/80 border border-amber-400/40 p-4 rounded-2xl flex items-center justify-between shadow-inner">
+            <div>
+              <span className="text-xs text-amber-400 block font-bold">Tono Actual</span>
+              <span className="text-sm font-semibold text-slate-200">Transpuesto para piano</span>
+            </div>
+            <span className="font-mono font-black text-amber-400 bg-amber-400/10 px-3 py-1 rounded-xl border border-amber-400/30 text-lg">
+              {currentKey}
+            </span>
+          </div>
+
+          <div className="bg-slate-900/80 border border-slate-700/80 p-4 rounded-2xl flex items-center justify-between">
+            <div>
+              <span className="text-xs text-slate-400 block font-medium">Tiempo y Compás</span>
+              <span className="text-sm font-semibold text-slate-200">{song.timeSignature}</span>
+            </div>
+            <span className="font-bold text-slate-100 bg-slate-800 px-3 py-1 rounded-xl border border-slate-700 text-sm">
+              {song.bpm} BPM
+            </span>
+          </div>
+        </div>
+
+        {/* Controles interactivos: Transposición, Letras y Auto-Scroll */}
+        <div className="flex flex-wrap items-center justify-between gap-4 pt-2">
+          {/* Transponedor */}
+          <div className="flex items-center gap-2 sm:gap-3 bg-slate-900 p-2 rounded-2xl border border-slate-700 flex-wrap">
+            <span className="text-xs font-bold text-slate-300 px-2">
+              Cambiar Tono:
+            </span>
+
+            <button
+              onClick={() => setSemitones(semitones - 1)}
+              className="w-10 h-10 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-black text-sm flex items-center justify-center transition-colors shadow cursor-pointer"
+              title="Bajar 1 semitono"
+            >
+              -0.5
+            </button>
+
+            <div className="px-3 text-center min-w-[70px]">
+              <span className="text-[11px] text-slate-400 block font-semibold">Tono</span>
+              <span className="font-mono font-black text-amber-400 text-base block">
+                {currentKey}
+              </span>
+            </div>
+
+            <button
+              onClick={() => setSemitones(semitones + 1)}
+              className="w-10 h-10 rounded-xl bg-slate-800 hover:bg-slate-700 text-white font-black text-sm flex items-center justify-center transition-colors shadow cursor-pointer"
+              title="Subir 1 semitono"
+            >
+              +0.5
+            </button>
+
+            {semitones !== 0 && (
+              <button
+                onClick={() => setSemitones(0)}
+                className="px-3 py-2 rounded-xl bg-amber-400 text-[#212121] hover:bg-amber-500 text-xs font-black transition-all ml-1 shadow cursor-pointer"
+                title="Volver al tono original"
+              >
+                Reset ({song.originalKey})
+              </button>
+            )}
+          </div>
+
+          {/* Toggle Acordes */}
+          <button
+            onClick={() => setShowChords(!showChords)}
+            className={`px-5 py-3 rounded-2xl text-sm font-black flex items-center gap-2.5 transition-all cursor-pointer ${
+              showChords
+                ? 'bg-amber-400 text-[#212121] shadow-lg shadow-amber-400/20 hover:bg-amber-500'
+                : 'bg-slate-900 text-slate-300 border border-slate-700 hover:text-white'
+            }`}
+          >
+            <Icon icon={showChords ? 'mdi:piano' : 'lucide:eye-off'} className="w-5 h-5" />
+            <span>{showChords ? 'Acordes Visibles' : 'Solo Letras'}</span>
+          </button>
+
+          {/* Tamaño de Letra & Auto-Scroll */}
+          <div className="flex items-center gap-3 flex-wrap">
+            <div className="flex items-center bg-slate-900 rounded-2xl border border-slate-700 p-1.5">
+              <button
+                onClick={() => setFontSize(Math.max(14, fontSize - 2))}
+                className="px-3 py-1.5 text-slate-200 hover:text-white font-bold text-xs cursor-pointer"
+                title="Disminuir tamaño de letra"
+              >
+                A-
+              </button>
+              <span className="text-xs font-mono px-2 text-amber-400 font-bold">{fontSize}px</span>
+              <button
+                onClick={() => setFontSize(Math.min(28, fontSize + 2))}
+                className="px-3 py-1.5 text-slate-200 hover:text-white font-bold text-sm cursor-pointer"
+                title="Aumentar tamaño de letra"
+              >
+                A+
+              </button>
+            </div>
+
+            <div className="flex items-center gap-1.5">
+              <button
+                onClick={() => setIsScrolling(!isScrolling)}
+                className={`px-5 py-3 rounded-2xl text-sm font-black flex items-center gap-2.5 transition-all cursor-pointer ${
+                  isScrolling
+                    ? 'bg-amber-400 text-[#212121] animate-pulse shadow-lg shadow-amber-400/30'
+                    : 'bg-slate-900 border border-slate-700 text-slate-300 hover:text-white'
+                }`}
+              >
+                <Icon icon={isScrolling ? 'lucide:pause' : 'lucide:play'} className="w-4 h-4" />
+                <span>Auto-Scroll</span>
+              </button>
+
+              {isScrolling && (
+                <button
+                  onClick={() => setScrollSpeed(scrollSpeed === 3 ? 1 : scrollSpeed + 1)}
+                  className="px-3 py-3 rounded-2xl bg-slate-900 border border-slate-700 text-xs font-black text-amber-400 cursor-pointer"
+                  title="Cambiar velocidad del auto-scroll"
+                >
+                  {scrollSpeed === 1 ? '1x' : scrollSpeed === 2 ? '2x' : '3x'}
+                </button>
+              )}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* 4. Barra Flotante Compacta Inferior (Dock Rápido para cambiar tono/auto-scroll mientras se lee arriba) */}
+      <div className="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 bg-slate-900/95 border border-slate-700/90 rounded-full px-4 py-2 shadow-2xl backdrop-blur-xl flex items-center gap-3 sm:gap-4 max-w-[95vw] overflow-x-auto">
+        <div className="flex items-center gap-1 bg-slate-800 px-2.5 py-1 rounded-full border border-slate-700">
+          <button
+            onClick={() => setSemitones(semitones - 1)}
+            className="w-7 h-7 rounded-full hover:bg-slate-700 text-slate-200 font-bold text-xs flex items-center justify-center cursor-pointer"
+            title="Bajar 0.5"
+          >
+            -
+          </button>
+          <span className="font-mono font-black text-amber-400 text-xs px-1 min-w-[32px] text-center">
+            {currentKey}
+          </span>
+          <button
+            onClick={() => setSemitones(semitones + 1)}
+            className="w-7 h-7 rounded-full hover:bg-slate-700 text-slate-200 font-bold text-xs flex items-center justify-center cursor-pointer"
+            title="Subir 0.5"
+          >
+            +
+          </button>
+        </div>
+
+        <button
+          onClick={() => setShowChords(!showChords)}
+          className={`p-2 rounded-full transition-all cursor-pointer ${
+            showChords ? 'text-amber-400 bg-amber-400/10' : 'text-slate-400 hover:text-white'
+          }`}
+          title={showChords ? 'Ocultar acordes' : 'Mostrar acordes'}
+        >
+          <Icon icon={showChords ? 'mdi:piano' : 'lucide:eye-off'} className="w-4 h-4" />
+        </button>
+
+        <button
+          onClick={() => setIsScrolling(!isScrolling)}
+          className={`px-3 py-1.5 rounded-full text-xs font-extrabold flex items-center gap-1.5 transition-all cursor-pointer ${
+            isScrolling ? 'bg-amber-400 text-[#212121]' : 'bg-slate-800 text-slate-300 hover:text-white border border-slate-700'
+          }`}
+        >
+          <Icon icon={isScrolling ? 'lucide:pause' : 'lucide:play'} className="w-3.5 h-3.5" />
+          <span>{isScrolling ? 'Scroll ON' : 'Scroll'}</span>
+        </button>
       </div>
     </div>
   );

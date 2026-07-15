@@ -47,7 +47,7 @@ export function App() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col bg-slate-950 text-slate-100 selection:bg-purple-600 selection:text-white">
+    <div className="min-h-screen flex flex-col bg-slate-950 text-slate-100 selection:bg-amber-400 selection:text-[#212121]">
       {/* Header Bar */}
       <Header
         activeTab={activeTab}
@@ -108,7 +108,7 @@ export function App() {
       <footer className="border-t border-slate-800/80 bg-slate-950/90 py-12 px-4 sm:px-6 lg:px-8 mt-20">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6 text-center md:text-left">
           <div className="flex items-center gap-3">
-            <div className="w-10 h-10 rounded-xl bg-purple-600/20 border border-purple-500/40 flex items-center justify-center text-purple-300">
+            <div className="w-10 h-10 rounded-xl bg-amber-400/20 border border-amber-400/40 flex items-center justify-center text-amber-300">
               <Icon icon="mdi:piano" className="w-6 h-6" />
             </div>
             <div>
@@ -125,7 +125,7 @@ export function App() {
           </div>
 
           <div className="flex items-center gap-4 text-slate-400">
-            <span className="text-xs font-semibold uppercase tracking-wider text-purple-400">
+            <span className="text-xs font-semibold uppercase tracking-wider text-amber-400">
               Soli Deo Gloria
             </span>
           </div>

@@ -53,12 +53,12 @@
                   },
                   {
                     "tokens": [
-                      { "chord": "F", "lyric": "La tierra alegre es" },
-                      { "chord": "G", "lyric": "tá, la tierra alegre es" },
-                      { "chord": "C", "lyric": "tá" }
+                      { "chord": "F", "lyric": "//La tierra alegre es" },
+                      { "chord": "G", "lyric": "tá//" },
+                      { "chord": "C", "lyric": "" }
                     ],
                     "rawChord": "F                   G                   C",
-                    "rawLyric": "La tierra alegre está, la tierra alegre está"
+                    "rawLyric": "//La tierra alegre está//"
                   },
                   {
                     "tokens": [
@@ -71,12 +71,12 @@
                   },
                   {
                     "tokens": [
-                      { "chord": "F", "lyric": "Y tiembla a su " },
-                      { "chord": "G", "lyric": "voz, y tiembla a su " },
-                      { "chord": "C", "lyric": "voz" }
+                      { "chord": "F", "lyric": "//Y tiembla a su " },
+                      { "chord": "G", "lyric": "voz//" },
+                      { "chord": "C", "lyric": "" }
                     ],
                     "rawChord": "F                   G                   C",
-                    "rawLyric": "Y tiembla a su voz, y tiembla a su voz"
+                    "rawLyric": "//Y tiembla a su voz//"
                   }
                 ]
               },
@@ -363,21 +363,21 @@
                 "lines": [
                   {
                     "tokens": [
-                      { "chord": "A", "lyric": "Jesucristo está aquí " },
+                      { "chord": "A", "lyric": "//Jesucristo está aquí " },
                       { "chord": "E", "lyric": "moviéndose con po" },
                       { "chord": "F#m", "lyric": "der" }
                     ],
                     "rawChord": "A                           E               F#m",
-                    "rawLyric": "Jesucristo está aquí moviéndose con poder"
+                    "rawLyric": "//Jesucristo está aquí moviéndose con poder"
                   },
                   {
                     "tokens": [
-                      { "chord": "A", "lyric": "y su pueblo se goza a" },
-                      { "chord": "Em", "lyric": "llá recibiendo su un" },
-                      { "chord": "F#m", "lyric": "ción" }
+                      { "chord": "A", "lyric": "y su pueblo se goza " },
+                      { "chord": "Em", "lyric": "ya recibiendo su un" },
+                      { "chord": "F#m", "lyric": "ción//" }
                     ],
                     "rawChord": "A                           Em              F#m",
-                    "rawLyric": "y su pueblo se goza allá recibiendo su unción"
+                    "rawLyric": "y su pueblo se goza ya recibiendo su unción//"
                   }
                 ]
               },
@@ -387,21 +387,21 @@
                 "lines": [
                   {
                     "tokens": [
-                      { "chord": "A", "lyric": "Lléname lléname de po" },
+                      { "chord": "A", "lyric": "//Lléname lléname de po" },
                       { "chord": "D", "lyric": "der, Espíritu santo " },
                       { "chord": "A", "lyric": "lléname" }
                     ],
                     "rawChord": "A                                       D           A",
-                    "rawLyric": "Lléname lléname de poder, Espíritu santo lléname"
+                    "rawLyric": "//Lléname lléname de poder, Espíritu santo lléname"
                   },
                   {
                     "tokens": [
                       { "lyric": "Lléname lléname de po" },
                       { "chord": "Em", "lyric": "der, Espíritu santo " },
-                      { "chord": "F#m", "lyric": "lléname" }
+                      { "chord": "F#m", "lyric": "lléname//" }
                     ],
                     "rawChord": "                                        Em          F#m",
-                    "rawLyric": "Lléname lléname de poder, Espíritu santo lléname"
+                    "rawLyric": "Lléname lléname de poder, Espíritu santo lléname//"
                   }
                 ]
               }
@@ -482,21 +482,21 @@
                 "lines": [
                   {
                     "tokens": [
-                      { "chord": "Am", "lyric": "Yo siento un fuego que me que" },
+                      { "chord": "Am", "lyric": "//Yo siento un fuego que me que" },
                       { "chord": "E", "lyric": "ma, un gozo que me " },
                       { "chord": "Am", "lyric": "llena" }
                     ],
                     "rawChord": "Am                          E                   Am",
-                    "rawLyric": "Yo siento un fuego que me quema, un gozo que me llena"
+                    "rawLyric": "//Yo siento un fuego que me quema, un gozo que me llena"
                   },
                   {
                     "tokens": [
                       { "chord": "Am", "lyric": "Y el Espíritu Santo mo" },
                       { "chord": "E", "lyric": "viéndose en mi " },
-                      { "chord": "Am", "lyric": "ser" }
+                      { "chord": "Am", "lyric": "ser//" }
                     ],
                     "rawChord": "Am                   E                  Am",
-                    "rawLyric": "Y el Espíritu Santo moviéndose en mi ser"
+                    "rawLyric": "Y el Espíritu Santo moviéndose en mi ser//"
                   }
                 ]
               },
@@ -519,6 +519,189 @@
                     ],
                     "rawChord": "E                Am",
                     "rawLyric": "Moviéndose en mi ser//"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "necesito-mas-uncion",
+            "title": "Necesito Más Unción",
+            "originalKey": "F#m",
+            "bpm": 130,
+            "timeSignature": "4/4",
+            "difficulty": "Fácil",
+            "themes": ["Unción", "Avivamiento", "Espíritu Santo", "Poder"],
+            "sections": [
+              {
+                "title": "Estrofa 1",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "F#m", "lyric": "//Mi espíritu anhela más de ti Se" },
+                      { "chord": "E", "lyric": "ñor" }
+                    ],
+                    "rawChord": "F#m                      E",
+                    "rawLyric": "//Mi espíritu anhela más de ti Señor"
+                  },
+                  {
+                    "tokens": [
+                      { "lyric": "Mi espíritu busca más de " },
+                      { "chord": "F#m", "lyric": "ti//" }
+                    ],
+                    "rawChord": "                         F#m",
+                    "rawLyric": "Mi espíritu busca más de ti//"
+                  }
+                ]
+              },
+              {
+                "title": "Coro",
+                "type": "coro",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "A", "lyric": "//Necesito más unción de ti Se" },
+                      { "chord": "E", "lyric": "ñor" }
+                    ],
+                    "rawChord": "      A                  E",
+                    "rawLyric": "//Necesito más unción de ti Señor"
+                  },
+                  {
+                    "tokens": [
+                      { "lyric": "Necesito más unción de " },
+                      { "chord": "F#m", "lyric": "ti//" }
+                    ],
+                    "rawChord": "                         F#m",
+                    "rawLyric": "Necesito más unción de ti//"
+                  }
+                ]
+              },
+              {
+                "title": "Estrofa 2",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "F#m", "lyric": "//Satúrame más de tu poder Se" },
+                      { "chord": "E", "lyric": "ñor" }
+                    ],
+                    "rawChord": "F#m                      E",
+                    "rawLyric": "//Satúrame más de tu poder Señor"
+                  },
+                  {
+                    "tokens": [
+                      { "lyric": "Enciende tu fuego sobre " },
+                      { "chord": "F#m", "lyric": "mi//" }
+                    ],
+                    "rawChord": "                         F#m",
+                    "rawLyric": "Enciende tu fuego sobre mi//"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "hay-alegria-en-mi-corazon",
+            "title": "Hay Alegría en mi Corazón",
+            "originalKey": "Fm",
+            "bpm": 135,
+            "timeSignature": "4/4",
+            "difficulty": "Fácil",
+            "themes": ["Gozo", "Salvación", "Alegría", "Avivamiento", "Corona"],
+            "sections": [
+              {
+                "title": "Estrofa",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Fm", "lyric": "//Hay alegría en mi cora" },
+                      { "chord": "Ab", "lyric": "zón" }
+                    ],
+                    "rawChord": "Fm               Ab",
+                    "rawLyric": "//Hay alegría en mi corazón"
+                  },
+                  {
+                    "tokens": [
+                      { "lyric": "porque Jesús " },
+                      { "chord": "Eb", "lyric": "ya me sal" },
+                      { "chord": "Fm", "lyric": "vó//" }
+                    ],
+                    "rawChord": "     Eb          Fm",
+                    "rawLyric": "porque Jesús ya me salvó//"
+                  },
+                  {
+                    "tokens": [
+                      { "lyric": "//En el libro de la " },
+                      { "chord": "Ab", "lyric": "vida" }
+                    ],
+                    "rawChord": "                 Ab",
+                    "rawLyric": "//En el libro de la vida"
+                  },
+                  {
+                    "tokens": [
+                      { "lyric": "mi nombre es" },
+                      { "chord": "Eb", "lyric": "crito ya es" },
+                      { "chord": "Fm", "lyric": "tá//" }
+                    ],
+                    "rawChord": "     Eb     Fm",
+                    "rawLyric": "mi nombre escrito ya está//"
+                  }
+                ]
+              },
+              {
+                "title": "Coro",
+                "type": "coro",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Db", "lyric": "//Cuando me llamen por mi " },
+                      { "chord": "Ab", "lyric": "nombre" }
+                    ],
+                    "rawChord": "Db               Ab",
+                    "rawLyric": "//Cuando me llamen por mi nombre"
+                  },
+                  {
+                    "tokens": [
+                      { "lyric": "yo fe" },
+                      { "chord": "Eb", "lyric": "liz respon" },
+                      { "chord": "Ab", "lyric": "deré//" }
+                    ],
+                    "rawChord": "   Eb        Ab",
+                    "rawLyric": "yo feliz responderé//"
+                  },
+                  {
+                    "tokens": [
+                      { "lyric": "//por la co" },
+                      { "chord": "Db", "lyric": "rona de la " },
+                      { "chord": "Ab", "lyric": "vida" }
+                    ],
+                    "rawChord": "       Db        Ab",
+                    "rawLyric": "//por la corona de la vida"
+                  },
+                  {
+                    "tokens": [
+                      { "lyric": "Mi se" },
+                      { "chord": "Eb", "lyric": "ñor Jesús me pre" },
+                      { "chord": "Fm", "lyric": "miará//" }
+                    ],
+                    "rawChord": "    Eb         Fm",
+                    "rawLyric": "Mi señor Jesús me premiará//"
+                  }
+                ]
+              },
+              {
+                "title": "Puente / Gozo",
+                "type": "puente",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Fm", "lyric": "//La arararararara " },
+                      { "chord": "Ab", "lyric": "larararararara//" }
+                    ],
+                    "rawChord": "Fm               Ab",
+                    "rawLyric": "//La arararararara larararararara//"
                   }
                 ]
               }
@@ -836,11 +1019,11 @@
                   },
                   {
                     "tokens": [
-                      { "chord": "F#m", "lyric": "Que estar a tus pies, " },
-                      { "chord": "A/C#", "lyric": "que estar a tus pies" }
+                      { "chord": "F#m", "lyric": "//Que estar a tus " },
+                      { "chord": "A/C#", "lyric": "pies//" }
                     ],
                     "rawChord": "F#m                   A/C#",
-                    "rawLyric": "Que estar a tus pies, que estar a tus pies"
+                    "rawLyric": "//Que estar a tus pies//"
                   },
                   {
                     "tokens": [
@@ -1059,23 +1242,23 @@
                 "lines": [
                   {
                     "tokens": [
-                      { "chord": "G#m", "lyric": "A" },
+                      { "chord": "G#m", "lyric": "//A" },
                       { "chord": "E", "lyric": "mén, a" },
                       { "chord": "B", "lyric": "mén, a" },
                       { "chord": "F#", "lyric": "mén" }
                     ],
                     "rawChord": "G#m   E    B    F#",
-                    "rawLyric": "Amén, amén, amén"
+                    "rawLyric": "//Amén, amén, amén"
                   },
                   {
                     "tokens": [
                       { "chord": "G#m", "lyric": "A" },
                       { "chord": "E", "lyric": "mén, a" },
                       { "chord": "B", "lyric": "mén, a" },
-                      { "chord": "F#", "lyric": "mén" }
+                      { "chord": "F#", "lyric": "mén//" }
                     ],
                     "rawChord": "G#m   E    B    F#",
-                    "rawLyric": "Amén, amén, amén"
+                    "rawLyric": "Amén, amén, amén//"
                   }
                 ]
               },
@@ -1119,6 +1302,811 @@
                     ],
                     "rawChord": "B                    F#                 G#m",
                     "rawLyric": "A tu lado, a tu alrededor, él va contigo"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ritmos-folk-rock",
+    "name": "Alabanzas Ritmos Folk Rock",
+    "subtitle": "Ritmos Folklóricos y Rock • Gozo Andino y Pentecostal",
+    "bio": "Una vibrante colección de alabanzas tradicionales, coritos de fuego y ritmos folk rock para exaltar el nombre de Jehová con júbilo, danza y panderos.",
+    "avatarBg": "bg-amber-600",
+    "albums": [
+      {
+        "id": "folkrock-vol-1",
+        "title": "Alabanzas Ritmos Folk Rock (Vol. 1)",
+        "year": 2024,
+        "coverGradient": "bg-amber-950",
+        "description": "Coritos alegres de avivamiento y fe con arreglos dinámicos para teclado y piano folklórico.",
+        "songs": [
+          {
+            "id": "los-que-confian-en-sus-fuerzas",
+            "title": "Los que Confían en sus Fuerzas",
+            "originalKey": "Am",
+            "bpm": 130,
+            "timeSignature": "4/4",
+            "difficulty": "Fácil",
+            "themes": ["Fe", "Fortaleza", "Esperanza", "Folk Rock"],
+            "sections": [
+              {
+                "title": "Estrofa 1",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Am", "lyric": "//Los que confían en sus " },
+                      { "chord": "G", "lyric": "fuerzas son como las " },
+                      { "chord": "Am", "lyric": "olas de la mar" }
+                    ],
+                    "rawChord": "Am                       G                    Am",
+                    "rawLyric": "//Los que confían en sus fuerzas son como las olas de la mar"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Dm", "lyric": "los lleva por doquier el " },
+                      { "chord": "E", "lyric": "viento y nunca permanece" },
+                      { "chord": "Am", "lyric": "rán//" }
+                    ],
+                    "rawChord": "Dm                       E                    Am",
+                    "rawLyric": "los lleva por doquier el viento y nunca permanecerán//"
+                  }
+                ]
+              },
+              {
+                "title": "Estrofa 2",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "F", "lyric": "//Pero los que esperan en " },
+                      { "chord": "G", "lyric": "Jehová nuevas posee" },
+                      { "chord": "C", "lyric": "rán" }
+                    ],
+                    "rawChord": "F                         G                   C",
+                    "rawLyric": "//Pero los que esperan en Jehová nuevas poseerán"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Dm", "lyric": "correrán y camina" },
+                      { "chord": "E", "lyric": "rán, pero no se fatiga" },
+                      { "chord": "Am", "lyric": "rán//" }
+                    ],
+                    "rawChord": "Dm                E                    Am",
+                    "rawLyric": "correrán y caminarán, pero no se fatigarán//"
+                  }
+                ]
+              },
+              {
+                "title": "Coro",
+                "type": "coro",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "F", "lyric": "//Mas sus alas levanta" },
+                      { "chord": "G", "lyric": "rán como águilas vola" },
+                      { "chord": "Am", "lyric": "rán//" }
+                    ],
+                    "rawChord": "F                      G                      Am",
+                    "rawLyric": "//Mas sus alas levantarán como águilas volarán//"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "gracias-gracias-senor-jesus",
+            "title": "Gracias, Gracias Señor Jesús",
+            "originalKey": "Em",
+            "bpm": 135,
+            "timeSignature": "4/4",
+            "difficulty": "Fácil",
+            "themes": ["Gratitud", "Liberación", "Alabanza", "Folk Rock"],
+            "sections": [
+              {
+                "title": "Estrofa 1",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Em", "lyric": "//Así como Cristo nos " },
+                      { "chord": "D", "lyric": "rescató del pecado y la mal" },
+                      { "chord": "Em", "lyric": "dad//" }
+                    ],
+                    "rawChord": "Em                    D                           Em",
+                    "rawLyric": "//Así como Cristo nos rescató del pecado y la maldad//"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Am", "lyric": "//Gracias, gracias Señor " },
+                      { "chord": "B7", "lyric": "Jesús por librarme de la mal" },
+                      { "chord": "Em", "lyric": "dad//" }
+                    ],
+                    "rawChord": "Am                       B7                           Em",
+                    "rawLyric": "//Gracias, gracias Señor Jesús por librarme de la maldad//"
+                  }
+                ]
+              },
+              {
+                "title": "Estrofa 2",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Am", "lyric": "//Gracias, gracias Señor " },
+                      { "chord": "B7", "lyric": "Jesús por limpiarme de mi mal" },
+                      { "chord": "Em", "lyric": "dad//" }
+                    ],
+                    "rawChord": "Am                       B7                            Em",
+                    "rawLyric": "//Gracias, gracias Señor Jesús por limpiarme de mi maldad//"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Em", "lyric": "//Así como Cristo nos " },
+                      { "chord": "D", "lyric": "rescató del pecado y la mal" },
+                      { "chord": "Em", "lyric": "dad//" }
+                    ],
+                    "rawChord": "Em                    D                           Em",
+                    "rawLyric": "//Así como Cristo nos rescató del pecado y la maldad//"
+                  }
+                ]
+              },
+              {
+                "title": "Coro",
+                "type": "coro",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "C", "lyric": "//Así, así hay que ala" },
+                      { "chord": "D", "lyric": "bar de su palabra hay que ha" },
+                      { "chord": "Em", "lyric": "blar//" }
+                    ],
+                    "rawChord": "C                      D                            Em",
+                    "rawLyric": "//Así, así hay que alabar de su palabra hay que hablar//"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "G", "lyric": "//Alabad a Jehová invocar " },
+                      { "chord": "D", "lyric": "su santo " },
+                      { "chord": "Em", "lyric": "nombre//" }
+                    ],
+                    "rawChord": "G                         D        Em",
+                    "rawLyric": "//Alabad a Jehová invocar su santo nombre//"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "C", "lyric": "//Canta alegre con gozo " },
+                      { "chord": "B7", "lyric": "alabanzas a Jeho" },
+                      { "chord": "Em", "lyric": "vá//" }
+                    ],
+                    "rawChord": "C                       B7               Em",
+                    "rawLyric": "//Canta alegre con gozo alabanzas a Jehová//"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "oh-amado-espiritu-santo",
+            "title": "Oh Amado Espíritu Santo",
+            "originalKey": "Dm",
+            "bpm": 125,
+            "timeSignature": "4/4",
+            "difficulty": "Fácil",
+            "themes": ["Espíritu Santo", "Presencia", "Comunión"],
+            "sections": [
+              {
+                "title": "Estrofa",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Dm", "lyric": "//Oh amado Espíritu " },
+                      { "chord": "C", "lyric": "Santo me he acostum" },
+                      { "chord": "Bb", "lyric": "brado a vivir con" },
+                      { "chord": "A7", "lyric": "tigo//" }
+                    ],
+                    "rawChord": "Dm                  C                   Bb               A7",
+                    "rawLyric": "//Oh amado Espíritu Santo me he acostumbrado a vivir contigo//"
+                  }
+                ]
+              },
+              {
+                "title": "Coro",
+                "type": "coro",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Gm", "lyric": "//Si tú no estás siento mo" },
+                      { "chord": "Dm", "lyric": "rir sin tu pre" },
+                      { "chord": "A7", "lyric": "sencia siento desfalle" },
+                      { "chord": "Dm", "lyric": "cer//" }
+                    ],
+                    "rawChord": "Gm                         Dm             A7                     Dm",
+                    "rawLyric": "//Si tú no estás siento morir sin tu presencia siento desfallecer//"
+                  }
+                ]
+              },
+              {
+                "title": "Puente",
+                "type": "puente",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Bb", "lyric": "//Puede faltarme cosas en la " },
+                      { "chord": "F", "lyric": "vida, pero tu pre" },
+                      { "chord": "Gm", "lyric": "sencia nunca me " },
+                      { "chord": "A7", "lyric": "fal" },
+                      { "chord": "Dm", "lyric": "te//" }
+                    ],
+                    "rawChord": "Bb                           F                 Gm               A7  Dm",
+                    "rawLyric": "//Puede faltarme cosas en la vida, pero tu presencia nunca me falte//"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "se-siente-el-fuego-de-dios",
+            "title": "Se Siente el Fuego de Dios",
+            "originalKey": "Am",
+            "bpm": 140,
+            "timeSignature": "4/4",
+            "difficulty": "Fácil",
+            "themes": ["Fuego", "Libertad", "Sanidad", "Gozo"],
+            "sections": [
+              {
+                "title": "Estrofa",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Am", "lyric": "//Se siente, se siente el " },
+                      { "chord": "E", "lyric": "fuego de Dios, que llena, que llena todo mi " },
+                      { "chord": "Am", "lyric": "ser//" }
+                    ],
+                    "rawChord": "Am                        E                                           Am",
+                    "rawLyric": "//Se siente, se siente el fuego de Dios, que llena, que llena todo mi ser//"
+                  }
+                ]
+              },
+              {
+                "title": "Coro",
+                "type": "coro",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Dm", "lyric": "//Solo en tu presencia hay liber" },
+                      { "chord": "Am", "lyric": "tad, solo en tu presencia hay sani" },
+                      { "chord": "E", "lyric": "dad," }
+                    ],
+                    "rawChord": "Dm                               Am                                 E",
+                    "rawLyric": "//Solo en tu presencia hay libertad, solo en tu presencia hay sanidad,"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Am", "lyric": "Solo en tu presencia me goza" },
+                      { "chord": "E", "lyric": "ré, solo en tu presencia me deleita" },
+                      { "chord": "Am", "lyric": "ré//" }
+                    ],
+                    "rawChord": "Am                           E                                   Am",
+                    "rawLyric": "Solo en tu presencia me gozaré, solo en tu presencia me deleitaré//"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "con-alegria-cantare",
+            "title": "Con Alegría Cantaré",
+            "originalKey": "Em",
+            "bpm": 135,
+            "timeSignature": "4/4",
+            "difficulty": "Fácil",
+            "themes": ["Alegría", "Gozo", "Danza", "Folk Rock"],
+            "sections": [
+              {
+                "title": "Estrofa",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Em", "lyric": "//Con alegría cantaré las ala" },
+                      { "chord": "D", "lyric": "banzas a mi Se" },
+                      { "chord": "Em", "lyric": "ñor//" }
+                    ],
+                    "rawChord": "Em                            D              Em",
+                    "rawLyric": "//Con alegría cantaré las alabanzas a mi Señor//"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Am", "lyric": "//Saltando, danzando dando " },
+                      { "chord": "B7", "lyric": "una vuelta me goza" },
+                      { "chord": "Em", "lyric": "ré//" }
+                    ],
+                    "rawChord": "Am                         B7                 Em",
+                    "rawLyric": "//Saltando, danzando dando una vuelta me gozaré//"
+                  }
+                ]
+              },
+              {
+                "title": "Coro",
+                "type": "coro",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "C", "lyric": "//Porque la tristeza ya se " },
+                      { "chord": "D", "lyric": "fue hay alegría en mi cora" },
+                      { "chord": "Em", "lyric": "zón//" }
+                    ],
+                    "rawChord": "C                          D                          Em",
+                    "rawLyric": "//Porque la tristeza ya se fue hay alegría en mi corazón//"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Am", "lyric": "//Saltando, danzando dando " },
+                      { "chord": "B7", "lyric": "una vuelta me goza" },
+                      { "chord": "Em", "lyric": "ré//" }
+                    ],
+                    "rawChord": "Am                         B7                 Em",
+                    "rawLyric": "//Saltando, danzando dando una vuelta me gozaré//"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "como-cordero-yo-saltare",
+            "title": "Como Cordero Yo Saltaré",
+            "originalKey": "Am",
+            "bpm": 138,
+            "timeSignature": "4/4",
+            "difficulty": "Fácil",
+            "themes": ["Gozo", "Danza", "Fuego", "Avivamiento"],
+            "sections": [
+              {
+                "title": "Estrofa 1",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Am", "lyric": "//Con alegría yo cantaré ala" },
+                      { "chord": "G", "lyric": "banzas a mi Se" },
+                      { "chord": "Am", "lyric": "ñor//" }
+                    ],
+                    "rawChord": "Am                           G              Am",
+                    "rawLyric": "//Con alegría yo cantaré alabanzas a mi Señor//"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Dm", "lyric": "//Como cordero yo saltaré en " },
+                      { "chord": "E", "lyric": "tu presencia me goza" },
+                      { "chord": "Am", "lyric": "ré//" }
+                    ],
+                    "rawChord": "Dm                           E                    Am",
+                    "rawLyric": "//Como cordero yo saltaré en tu presencia me gozaré//"
+                  }
+                ]
+              },
+              {
+                "title": "Estrofa 2",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "F", "lyric": "//Tu fuego está en mi cora" },
+                      { "chord": "G", "lyric": "zón renovando todo mi " },
+                      { "chord": "Am", "lyric": "ser//" }
+                    ],
+                    "rawChord": "F                          G                      Am",
+                    "rawLyric": "//Tu fuego está en mi corazón renovando todo mi ser//"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Dm", "lyric": "//Como cordero yo saltaré en " },
+                      { "chord": "E", "lyric": "tu presencia me goza" },
+                      { "chord": "Am", "lyric": "ré//" }
+                    ],
+                    "rawChord": "Dm                           E                    Am",
+                    "rawLyric": "//Como cordero yo saltaré en tu presencia me gozaré//"
+                  }
+                ]
+              },
+              {
+                "title": "Coro",
+                "type": "coro",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Dm", "lyric": "//Bautízame lléname mi Se" },
+                      { "chord": "Am", "lyric": "ñor con tu presencia avíva" },
+                      { "chord": "E", "lyric": "me//" }
+                    ],
+                    "rawChord": "Dm                        Am                       E",
+                    "rawLyric": "//Bautízame lléname mi Señor con tu presencia avívame//"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Dm", "lyric": "//Como cordero yo saltaré en " },
+                      { "chord": "E", "lyric": "tu presencia me goza" },
+                      { "chord": "Am", "lyric": "ré//" }
+                    ],
+                    "rawChord": "Dm                           E                    Am",
+                    "rawLyric": "//Como cordero yo saltaré en tu presencia me gozaré//"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "yo-no-soy-de-aqui",
+            "title": "Yo No Soy de Aquí",
+            "originalKey": "F#m",
+            "bpm": 130,
+            "timeSignature": "4/4",
+            "difficulty": "Fácil",
+            "themes": ["Cielo", "Esperanza", "Gozo", "Folk Rock"],
+            "sections": [
+              {
+                "title": "Estrofa",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "F#m", "lyric": "//Yo no soy de aquí yo soy " },
+                      { "chord": "E", "lyric": "de allá y pronto yo me i" },
+                      { "chord": "F#m", "lyric": "ré//" }
+                    ],
+                    "rawChord": "F#m                         E                        F#m",
+                    "rawLyric": "//Yo no soy de aquí yo soy de allá y pronto yo me iré//"
+                  }
+                ]
+              },
+              {
+                "title": "Coro",
+                "type": "coro",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Bm", "lyric": "//Mira, mira, mira mi cora" },
+                      { "chord": "F#m", "lyric": "zón, mira, mira, mira cómo se " },
+                      { "chord": "C#7", "lyric": "go" },
+                      { "chord": "F#m", "lyric": "za//" }
+                    ],
+                    "rawChord": "Bm                         F#m                            C#7 F#m",
+                    "rawLyric": "//Mira, mira, mira mi corazón, mira, mira, mira cómo se goza//"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "hay-alegria-en-mi-corazon-folkrock",
+            "title": "Hay Alegría en mi Corazón (Versión Folk Rock)",
+            "originalKey": "Am",
+            "bpm": 140,
+            "timeSignature": "4/4",
+            "difficulty": "Fácil",
+            "themes": ["Gozo", "Salvación", "Corona", "Folk Rock"],
+            "sections": [
+              {
+                "title": "Estrofa",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Am", "lyric": "//Hay alegría en mi corazón porque Jesús " },
+                      { "chord": "G", "lyric": "ya me salvó en el libro de la vida " },
+                      { "chord": "F", "lyric": "mi nombre es" },
+                      { "chord": "E", "lyric": "crito ya es" },
+                      { "chord": "Am", "lyric": "tá//" }
+                    ],
+                    "rawChord": "Am                                        G                                   F            E           Am",
+                    "rawLyric": "//Hay alegría en mi corazón porque Jesús ya me salvó en el libro de la vida mi nombre escrito ya está//"
+                  }
+                ]
+              },
+              {
+                "title": "Coro",
+                "type": "coro",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Dm", "lyric": "//Cuando me llamen por mi nombre yo feliz " },
+                      { "chord": "Am", "lyric": "responderé con la corona de la vida " },
+                      { "chord": "E", "lyric": "mi Señor Jesús me pre" },
+                      { "chord": "Am", "lyric": "miará//" }
+                    ],
+                    "rawChord": "Dm                                        Am                                  E                     Am",
+                    "rawLyric": "//Cuando me llamen por mi nombre yo feliz responderé con la corona de la vida mi Señor Jesús me premiará//"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "quedate-aqui",
+            "title": "Quédate Aquí",
+            "originalKey": "Em",
+            "bpm": 120,
+            "timeSignature": "4/4",
+            "difficulty": "Fácil",
+            "themes": ["Presencia", "Consuelo", "Espíritu Santo"],
+            "sections": [
+              {
+                "title": "Estrofa",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Em", "lyric": "//Quédate aquí en mi vida " },
+                      { "chord": "Am", "lyric": "oh Se" },
+                      { "chord": "B7", "lyric": "ñor//" }
+                    ],
+                    "rawChord": "Em                        Am    B7",
+                    "rawLyric": "//Quédate aquí en mi vida oh Señor//"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "C", "lyric": "//Sana mi vida, " },
+                      { "chord": "D", "lyric": "sana mi " },
+                      { "chord": "Em", "lyric": "al" },
+                      { "chord": "B7", "lyric": "ma//" }
+                    ],
+                    "rawChord": "C               D       Em B7",
+                    "rawLyric": "//Sana mi vida, sana mi alma//"
+                  }
+                ]
+              },
+              {
+                "title": "Coro",
+                "type": "coro",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Am", "lyric": "//Fluye en mi vida Es" },
+                      { "chord": "Em", "lyric": "píritu " },
+                      { "chord": "B7", "lyric": "San" },
+                      { "chord": "Em", "lyric": "to//" }
+                    ],
+                    "rawChord": "Am                   Em      B7  Em",
+                    "rawLyric": "//Fluye en mi vida Espíritu Santo//"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "C", "lyric": "//Necesito más, más de tu con" },
+                      { "chord": "D", "lyric": "suelo, necesito más de tu pre" },
+                      { "chord": "Em", "lyric": "sen" },
+                      { "chord": "B7", "lyric": "cia//" }
+                    ],
+                    "rawChord": "C                             D                              Em  B7",
+                    "rawLyric": "//Necesito más, más de tu consuelo, necesito más de tu presencia//"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "en-las-manos-de-mi-jesus",
+            "title": "En las Manos de mi Jesús",
+            "originalKey": "Am",
+            "bpm": 130,
+            "timeSignature": "4/4",
+            "difficulty": "Fácil",
+            "themes": ["Seguridad", "Escudo", "Fortaleza", "Folk Rock"],
+            "sections": [
+              {
+                "title": "Estrofa",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Am", "lyric": "//En las manos de mi Je" },
+                      { "chord": "G", "lyric": "sús// estoy seguro nada, " },
+                      { "chord": "E", "lyric": "nada me falta" },
+                      { "chord": "Am", "lyric": "rá//" }
+                    ],
+                    "rawChord": "Am                     G                         E             Am",
+                    "rawLyric": "//En las manos de mi Jesús// estoy seguro nada, nada me faltará//"
+                  }
+                ]
+              },
+              {
+                "title": "Coro",
+                "type": "coro",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Dm", "lyric": "///Él es mi escudo mi forta" },
+                      { "chord": "Am", "lyric": "leza quien levanta " },
+                      { "chord": "E", "lyric": "mi ca" },
+                      { "chord": "Am", "lyric": "beza///" }
+                    ],
+                    "rawChord": "Dm                         Am                  E     Am",
+                    "rawLyric": "///Él es mi escudo mi fortaleza quien levanta mi cabeza///"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "la-iglesia-de-dios",
+            "title": "La Iglesia de Dios",
+            "originalKey": "Dm",
+            "bpm": 135,
+            "timeSignature": "4/4",
+            "difficulty": "Fácil",
+            "themes": ["Iglesia", "Victoria", "Alabanza", "Folk Rock"],
+            "sections": [
+              {
+                "title": "Estrofa 1",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Dm", "lyric": "//La iglesia de Dios nunca " },
+                      { "chord": "A7", "lyric": "perece" },
+                      { "chord": "Dm", "lyric": "rá//" }
+                    ],
+                    "rawChord": "Dm                         A7     Dm",
+                    "rawLyric": "//La iglesia de Dios nunca perecerá//"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Gm", "lyric": "//Vamos iglesia de Dios " },
+                      { "chord": "Dm", "lyric": "alaba, alaba a tu " },
+                      { "chord": "A7", "lyric": "Rey//" }
+                    ],
+                    "rawChord": "Gm                      Dm                A7",
+                    "rawLyric": "//Vamos iglesia de Dios alaba, alaba a tu Rey//"
+                  }
+                ]
+              },
+              {
+                "title": "Estrofa 2",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Bb", "lyric": "//Su palabra está escrita en " },
+                      { "chord": "C", "lyric": "mi cora" },
+                      { "chord": "F", "lyric": "zón//" }
+                    ],
+                    "rawChord": "Bb                           C       F",
+                    "rawLyric": "//Su palabra está escrita en mi corazón//"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Gm", "lyric": "//Vamos iglesia de Dios " },
+                      { "chord": "Dm", "lyric": "alaba, alaba tu " },
+                      { "chord": "A7", "lyric": "Rey//" }
+                    ],
+                    "rawChord": "Gm                      Dm              A7",
+                    "rawLyric": "//Vamos iglesia de Dios alaba, alaba tu Rey//"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "todo-lo-puedo-en-cristo",
+            "title": "Todo lo Puedo en Cristo",
+            "originalKey": "Am",
+            "bpm": 135,
+            "timeSignature": "4/4",
+            "difficulty": "Fácil",
+            "themes": ["Victoria", "Fortaleza", "Batalla Espiritual", "Folk Rock"],
+            "sections": [
+              {
+                "title": "Estrofa",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Am", "lyric": "//Todo lo puedo en Cristo " },
+                      { "chord": "G", "lyric": "que me forta" },
+                      { "chord": "Am", "lyric": "lece//" }
+                    ],
+                    "rawChord": "Am                        G            Am",
+                    "rawLyric": "//Todo lo puedo en Cristo que me fortalece//"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Dm", "lyric": "//En las luchas y las pruebas " },
+                      { "chord": "E", "lyric": "sigo ade" },
+                      { "chord": "Am", "lyric": "lante//" }
+                    ],
+                    "rawChord": "Dm                            E        Am",
+                    "rawLyric": "//En las luchas y las pruebas sigo adelante//"
+                  }
+                ]
+              },
+              {
+                "title": "Coro",
+                "type": "coro",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "F", "lyric": "//Cantando, danzando " },
+                      { "chord": "G", "lyric": "venceremos las pruebas, " },
+                      { "chord": "Am", "lyric": "caminando con Cristo " },
+                      { "chord": "E", "lyric": "ganaremos las bata" },
+                      { "chord": "Am", "lyric": "llas//" }
+                    ],
+                    "rawChord": "F                    G                       Am                   E                  Am",
+                    "rawLyric": "//Cantando, danzando venceremos las pruebas, caminando con Cristo ganaremos las batallas//"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "id": "hosanna-en-las-alturas",
+            "title": "Hosanna en las Alturas",
+            "originalKey": "Em",
+            "bpm": 135,
+            "timeSignature": "4/4",
+            "difficulty": "Fácil",
+            "themes": ["Hosanna", "Ríos de Agua Viva", "Sanidad", "Folk Rock"],
+            "sections": [
+              {
+                "title": "Estrofa 1",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Em", "lyric": "//Hosanna, hosanna en las al" },
+                      { "chord": "D", "lyric": "turas bendito, bendito el " },
+                      { "chord": "B7", "lyric": "que vie" },
+                      { "chord": "Em", "lyric": "ne//" }
+                    ],
+                    "rawChord": "Em                           D                          B7      Em",
+                    "rawLyric": "//Hosanna, hosanna en las alturas bendito, bendito el que viene//"
+                  }
+                ]
+              },
+              {
+                "title": "Estrofa 2",
+                "type": "estrofa",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "Am", "lyric": "//Jeshua, Jeshua Adonay al" },
+                      { "chord": "Em", "lyric": "tísimo Señor sobre mí " },
+                      { "chord": "B7", "lyric": "es" },
+                      { "chord": "Em", "lyric": "tás//" }
+                    ],
+                    "rawChord": "Am                         Em                     B7  Em",
+                    "rawLyric": "//Jeshua, Jeshua Adonay altísimo Señor sobre mí estás//"
+                  }
+                ]
+              },
+              {
+                "title": "Coro",
+                "type": "coro",
+                "lines": [
+                  {
+                    "tokens": [
+                      { "chord": "C", "lyric": "//Río río río ríos de agua " },
+                      { "chord": "D", "lyric": "viva sana sana sana sana los en" },
+                      { "chord": "Em", "lyric": "fermos," }
+                    ],
+                    "rawChord": "C                          D                               Em",
+                    "rawLyric": "//Río río río ríos de agua viva sana sana sana sana los enfermos,"
+                  },
+                  {
+                    "tokens": [
+                      { "chord": "Am", "lyric": "Río río río ríos de agua viva " },
+                      { "chord": "B7", "lyric": "fluye fluye fluye fluye sobre " },
+                      { "chord": "Em", "lyric": "mi ser//" }
+                    ],
+                    "rawChord": "Am                             B7                             Em",
+                    "rawLyric": "Río río río ríos de agua viva fluye fluye fluye fluye sobre mi ser//"
                   }
                 ]
               }

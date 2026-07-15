@@ -68,30 +68,30 @@ export const SongCatalog: React.FC<SongCatalogProps> = ({
   return (
     <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-8">
       <div>
-        <div className="flex items-center gap-2 text-purple-400 font-bold text-xs uppercase tracking-wider mb-2">
+        <div className="flex items-center gap-2 text-amber-400 font-bold text-xs uppercase tracking-wider mb-2">
           <Icon icon="lucide:music" className="w-4 h-4" />
           <span>Repertorio Completo</span>
         </div>
         <h2 className="text-3xl sm:text-4xl font-black text-white tracking-tight">
           Catálogo de Alabanzas para Piano
         </h2>
-        <p className="text-slate-400 text-sm sm:text-base mt-1">
+        <p className="text-slate-300 text-sm sm:text-base mt-1">
           Filtra por tono, dificultad del piano o busca por estrofas y coros.
         </p>
       </div>
 
       {/* Filters Toolbar */}
-      <div className="bg-slate-900/80 border border-slate-800 rounded-2xl p-4 sm:p-6 backdrop-blur-sm flex flex-wrap items-center justify-between gap-4">
+      <div className="bg-slate-800 border border-slate-700 rounded-2xl p-4 sm:p-6 backdrop-blur-sm flex flex-wrap items-center justify-between gap-4 shadow-lg">
         <div className="flex flex-wrap items-center gap-4">
           {/* Difficulty Filter */}
           <div className="flex items-center gap-2">
-            <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">
+            <span className="text-xs font-bold text-slate-300 uppercase tracking-wider">
               Nivel Piano:
             </span>
             <select
               value={selectedDifficulty}
               onChange={(e) => setSelectedDifficulty(e.target.value)}
-              className="bg-slate-950 border border-slate-700/80 rounded-xl px-3 py-1.5 text-sm font-semibold text-slate-200 focus:outline-none focus:border-purple-500"
+              className="bg-slate-900 border border-slate-600 rounded-xl px-3 py-1.5 text-sm font-semibold text-slate-100 focus:outline-none focus:border-amber-400"
             >
               <option value="all">Todos los niveles</option>
               <option value="Fácil">Fácil</option>
@@ -102,13 +102,13 @@ export const SongCatalog: React.FC<SongCatalogProps> = ({
 
           {/* Key Filter */}
           <div className="flex items-center gap-2">
-            <span className="text-xs font-bold text-slate-400 uppercase tracking-wider">
+            <span className="text-xs font-bold text-slate-300 uppercase tracking-wider">
               Tono Original:
             </span>
             <select
               value={selectedKey}
               onChange={(e) => setSelectedKey(e.target.value)}
-              className="bg-slate-950 border border-slate-700/80 rounded-xl px-3 py-1.5 text-sm font-semibold text-slate-200 focus:outline-none focus:border-purple-500"
+              className="bg-slate-900 border border-slate-600 rounded-xl px-3 py-1.5 text-sm font-semibold text-slate-100 focus:outline-none focus:border-amber-400"
             >
               <option value="all">Todos los tonos ({keys.length})</option>
               {keys.map((k) => (
@@ -120,17 +120,17 @@ export const SongCatalog: React.FC<SongCatalogProps> = ({
           </div>
         </div>
 
-        <div className="text-xs sm:text-sm font-bold text-purple-300 px-3 py-1.5 rounded-xl bg-purple-500/10 border border-purple-500/20">
+        <div className="text-xs sm:text-sm font-bold text-amber-300 px-3 py-1.5 rounded-xl bg-amber-400/10 border border-amber-400/20">
           Mostrando {filteredSongs.length} de {allSongs.length} canciones
         </div>
       </div>
 
       {/* Song List */}
       {filteredSongs.length === 0 ? (
-        <div className="bg-slate-900/60 border border-slate-800 rounded-2xl p-12 text-center space-y-3">
-          <Icon icon="lucide:search-x" className="w-12 h-12 text-slate-500 mx-auto" />
+        <div className="bg-slate-800 border border-slate-700 rounded-2xl p-12 text-center space-y-3 shadow-lg">
+          <Icon icon="lucide:search-x" className="w-12 h-12 text-slate-400 mx-auto" />
           <h4 className="text-lg font-bold text-white">No se encontraron alabanzas</h4>
-          <p className="text-sm text-slate-400 max-w-md mx-auto">
+          <p className="text-sm text-slate-300 max-w-md mx-auto">
             Intenta buscar con otros términos o cambia los filtros seleccionados de tono y nivel de dificultad.
           </p>
         </div>
@@ -140,12 +140,12 @@ export const SongCatalog: React.FC<SongCatalogProps> = ({
             <div
               key={song.id}
               onClick={() => onSelectSong(song, authorName, albumTitle)}
-              className="group bg-slate-900/80 hover:bg-slate-900 border border-slate-800/80 hover:border-purple-500/50 rounded-2xl p-5 cursor-pointer transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl hover:shadow-purple-900/20 flex flex-col justify-between"
+              className="group bg-slate-800 hover:bg-slate-750 border border-slate-700 hover:border-amber-400/50 rounded-2xl p-5 cursor-pointer transition-all duration-300 transform hover:-translate-y-1 hover:shadow-xl hover:shadow-black/30 flex flex-col justify-between shadow-md"
             >
               <div className={`w-full h-1.5 rounded-full ${avatarBg} mb-4 opacity-75 group-hover:opacity-100 transition-opacity`} />
               <div>
                 <div className="flex items-center justify-between mb-3">
-                  <span className="text-xs font-bold px-2.5 py-1 rounded-lg bg-purple-950/90 border border-purple-700/60 text-purple-200 flex items-center gap-1">
+                  <span className="text-xs font-bold px-2.5 py-1 rounded-lg bg-slate-900 border border-slate-700 text-amber-300 flex items-center gap-1">
                     <Icon icon="mdi:piano" className="w-3.5 h-3.5" />
                     <span>Tono: {song.originalKey}</span>
                   </span>
@@ -162,18 +162,18 @@ export const SongCatalog: React.FC<SongCatalogProps> = ({
                   </span>
                 </div>
 
-                <h4 className="font-extrabold text-white text-lg group-hover:text-purple-300 transition-colors">
+                <h4 className="font-extrabold text-white text-lg group-hover:text-amber-300 transition-colors break-words leading-snug">
                   {song.title}
                 </h4>
-                <p className="text-xs text-slate-400 font-semibold mt-1">
-                  {authorName} • <span className="text-slate-500">{albumTitle}</span>
+                <p className="text-xs text-slate-300 font-semibold mt-1 break-words">
+                  {authorName} • <span className="text-slate-400">{albumTitle}</span>
                 </p>
 
                 <div className="flex flex-wrap gap-1.5 mt-4">
                   {song.themes.map((theme, i) => (
                     <span
                       key={i}
-                      className="text-[11px] font-medium px-2 py-0.5 rounded bg-slate-800/80 text-slate-300"
+                      className="text-[11px] font-medium px-2 py-0.5 rounded bg-slate-900 text-slate-300"
                     >
                       #{theme}
                     </span>
@@ -181,13 +181,13 @@ export const SongCatalog: React.FC<SongCatalogProps> = ({
                 </div>
               </div>
 
-              <div className="mt-6 pt-4 border-t border-slate-800/80 flex items-center justify-between text-xs font-bold text-slate-300">
+              <div className="mt-6 pt-4 border-t border-slate-700 flex items-center justify-between text-xs font-bold text-slate-300">
                 <span className="flex items-center gap-2 text-slate-400">
                   <span>{song.bpm} BPM</span>
                   <span>•</span>
                   <span>{song.timeSignature}</span>
                 </span>
-                <span className="text-purple-400 group-hover:text-white flex items-center gap-1 group-hover:translate-x-1 transition-all">
+                <span className="text-amber-400 group-hover:text-amber-300 flex items-center gap-1 group-hover:translate-x-1 transition-all">
                   <span>Abrir Acordes</span>
                   <Icon icon="lucide:arrow-right" className="w-4 h-4" />
                 </span>

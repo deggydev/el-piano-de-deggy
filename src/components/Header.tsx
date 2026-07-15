@@ -17,16 +17,16 @@ export const Header: React.FC<HeaderProps> = ({
   const [mobileMenuOpen, setMobileMenuOpen] = React.useState(false);
 
   return (
-    <header className="sticky top-0 z-50 backdrop-blur-xl bg-slate-950/80 border-b border-purple-900/30 shadow-2xl">
+    <header className="sticky top-0 z-50 backdrop-blur-xl bg-slate-950/90 border-b border-slate-700/60 shadow-2xl">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between gap-4">
         {/* Brand Logo */}
         <div
           onClick={() => setActiveTab('portada')}
           className="flex items-center gap-3 cursor-pointer group select-none"
         >
-          <div className="w-12 h-12 rounded-2xl bg-purple-600 p-[2px] shadow-lg shadow-purple-500/20 group-hover:shadow-purple-500/40 transition-all duration-300 transform group-hover:scale-105">
-            <div className="w-full h-full bg-slate-950 rounded-[14px] flex items-center justify-center">
-              <Icon icon="mdi:piano" className="w-7 h-7 text-purple-400 group-hover:text-amber-400 transition-colors" />
+          <div className="w-12 h-12 rounded-2xl bg-amber-400 p-[2px] shadow-lg shadow-amber-400/20 group-hover:shadow-amber-400/40 transition-all duration-300 transform group-hover:scale-105">
+            <div className="w-full h-full bg-slate-800 rounded-[14px] flex items-center justify-center">
+              <Icon icon="mdi:piano" className="w-7 h-7 text-amber-400 group-hover:text-white transition-colors" />
             </div>
           </div>
           <div>
@@ -34,11 +34,11 @@ export const Header: React.FC<HeaderProps> = ({
               <span className="font-extrabold text-xl tracking-tight text-white">
                 El Piano de Deggy
               </span>
-              <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-purple-500/20 border border-purple-500/40 text-purple-300 tracking-wider uppercase">
+              <span className="text-[10px] font-bold px-2 py-0.5 rounded-full bg-amber-400/20 border border-amber-400/40 text-amber-300 tracking-wider uppercase">
                 Alabanza
               </span>
             </div>
-            <p className="text-xs text-slate-400 font-medium">
+            <p className="text-xs text-slate-300 font-medium">
               Cancionero de Acordes para Piano
             </p>
           </div>
@@ -47,14 +47,14 @@ export const Header: React.FC<HeaderProps> = ({
         {/* Search Bar (Desktop & Tablet) */}
         <div className="hidden md:flex flex-1 max-w-md mx-6 relative">
           <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
-            <Icon icon="lucide:search" className="w-4 h-4 text-purple-400" />
+            <Icon icon="lucide:search" className="w-4 h-4 text-amber-400" />
           </div>
           <input
             type="text"
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
             placeholder="Buscar por canción, salmista, álbum o letra..."
-            className="w-full pl-10 pr-10 py-2.5 bg-slate-900/90 border border-slate-800 focus:border-purple-500/60 rounded-xl text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-purple-500/20 transition-all shadow-inner"
+            className="w-full pl-10 pr-10 py-2.5 bg-slate-800 border border-slate-700 focus:border-amber-400 rounded-xl text-sm text-slate-100 placeholder-slate-400 focus:outline-none focus:ring-2 focus:ring-amber-400/20 transition-all shadow-inner"
           />
           {searchQuery && (
             <button
@@ -67,13 +67,13 @@ export const Header: React.FC<HeaderProps> = ({
         </div>
 
         {/* Navigation Tabs (Desktop) */}
-        <nav className="hidden lg:flex items-center gap-1 bg-slate-900/60 p-1.5 rounded-xl border border-slate-800/80">
+        <nav className="hidden lg:flex items-center gap-1 bg-slate-800/90 p-1.5 rounded-xl border border-slate-700">
           <button
             onClick={() => setActiveTab('portada')}
             className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 ${
               activeTab === 'portada'
-                ? 'bg-purple-600 text-white shadow-md shadow-purple-600/30'
-                : 'text-slate-300 hover:text-white hover:bg-slate-800/60'
+                ? 'bg-amber-400 text-[#212121] font-bold shadow-md shadow-amber-400/30'
+                : 'text-slate-200 hover:text-white hover:bg-slate-700'
             }`}
           >
             <Icon icon="lucide:home" className="w-4 h-4" />
@@ -84,8 +84,8 @@ export const Header: React.FC<HeaderProps> = ({
             onClick={() => setActiveTab('autores')}
             className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 ${
               activeTab === 'autores'
-                ? 'bg-purple-600 text-white shadow-md shadow-purple-600/30'
-                : 'text-slate-300 hover:text-white hover:bg-slate-800/60'
+                ? 'bg-amber-400 text-[#212121] font-bold shadow-md shadow-amber-400/30'
+                : 'text-slate-200 hover:text-white hover:bg-slate-700'
             }`}
           >
             <Icon icon="lucide:users" className="w-4 h-4" />
@@ -96,8 +96,8 @@ export const Header: React.FC<HeaderProps> = ({
             onClick={() => setActiveTab('catalogo')}
             className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 ${
               activeTab === 'catalogo'
-                ? 'bg-purple-600 text-white shadow-md shadow-purple-600/30'
-                : 'text-slate-300 hover:text-white hover:bg-slate-800/60'
+                ? 'bg-amber-400 text-[#212121] font-bold shadow-md shadow-amber-400/30'
+                : 'text-slate-200 hover:text-white hover:bg-slate-700'
             }`}
           >
             <Icon icon="lucide:music" className="w-4 h-4" />
@@ -108,8 +108,8 @@ export const Header: React.FC<HeaderProps> = ({
             onClick={() => setActiveTab('acordes')}
             className={`flex items-center gap-2 px-4 py-2 rounded-lg text-sm font-semibold transition-all duration-200 ${
               activeTab === 'acordes'
-                ? 'bg-purple-600 text-white shadow-md shadow-purple-600/30'
-                : 'text-slate-300 hover:text-white hover:bg-slate-800/60'
+                ? 'bg-amber-400 text-[#212121] font-bold shadow-md shadow-amber-400/30'
+                : 'text-slate-200 hover:text-white hover:bg-slate-700'
             }`}
           >
             <Icon icon="lucide:book-open" className="w-4 h-4" />
@@ -120,29 +120,29 @@ export const Header: React.FC<HeaderProps> = ({
         {/* Mobile Menu Button */}
         <button
           onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-          className="lg:hidden p-2.5 rounded-xl bg-slate-900 border border-slate-800 text-slate-300 hover:text-white focus:outline-none"
+          className="lg:hidden p-2.5 rounded-xl bg-slate-800 border border-slate-700 text-slate-200 hover:text-white focus:outline-none"
           aria-label="Abrir menú"
         >
           <Icon
             icon={mobileMenuOpen ? 'lucide:x' : 'lucide:menu'}
-            className="w-6 h-6 text-purple-400"
+            className="w-6 h-6 text-amber-400"
           />
         </button>
       </div>
 
       {/* Mobile Search Bar & Navigation Drawer */}
       {mobileMenuOpen && (
-        <div className="lg:hidden bg-slate-950/95 border-b border-slate-800 px-4 pt-3 pb-6 space-y-4 animate-fadeIn">
+        <div className="lg:hidden bg-slate-950/95 border-b border-slate-700 px-4 pt-3 pb-6 space-y-4 animate-fadeIn">
           <div className="relative">
             <div className="absolute inset-y-0 left-0 pl-3.5 flex items-center pointer-events-none text-slate-400">
-              <Icon icon="lucide:search" className="w-4 h-4 text-purple-400" />
+              <Icon icon="lucide:search" className="w-4 h-4 text-amber-400" />
             </div>
             <input
               type="text"
               value={searchQuery}
               onChange={(e) => setSearchQuery(e.target.value)}
               placeholder="Buscar por canción, salmista o letra..."
-              className="w-full pl-10 pr-10 py-2.5 bg-slate-900 border border-slate-800 rounded-xl text-sm text-slate-100 placeholder-slate-500 focus:outline-none"
+              className="w-full pl-10 pr-10 py-2.5 bg-slate-800 border border-slate-700 rounded-xl text-sm text-slate-100 placeholder-slate-400 focus:outline-none"
             />
             {searchQuery && (
               <button
@@ -162,11 +162,11 @@ export const Header: React.FC<HeaderProps> = ({
               }}
               className={`flex items-center gap-2.5 px-4 py-3 rounded-xl text-sm font-semibold ${
                 activeTab === 'portada'
-                  ? 'bg-purple-600 text-white'
-                  : 'bg-slate-900 text-slate-300'
+                  ? 'bg-amber-400 text-[#212121] font-bold'
+                  : 'bg-slate-800 text-slate-200'
               }`}
             >
-              <Icon icon="lucide:home" className="w-5 h-5 text-purple-300" />
+              <Icon icon="lucide:home" className="w-5 h-5 text-amber-400" />
               <span>Portada</span>
             </button>
 
@@ -177,11 +177,11 @@ export const Header: React.FC<HeaderProps> = ({
               }}
               className={`flex items-center gap-2.5 px-4 py-3 rounded-xl text-sm font-semibold ${
                 activeTab === 'autores'
-                  ? 'bg-purple-600 text-white'
-                  : 'bg-slate-900 text-slate-300'
+                  ? 'bg-amber-400 text-[#212121] font-bold'
+                  : 'bg-slate-800 text-slate-200'
               }`}
             >
-              <Icon icon="lucide:users" className="w-5 h-5 text-purple-300" />
+              <Icon icon="lucide:users" className="w-5 h-5 text-amber-400" />
               <span>Salmistas</span>
             </button>
 
@@ -192,11 +192,11 @@ export const Header: React.FC<HeaderProps> = ({
               }}
               className={`flex items-center gap-2.5 px-4 py-3 rounded-xl text-sm font-semibold ${
                 activeTab === 'catalogo'
-                  ? 'bg-purple-600 text-white'
-                  : 'bg-slate-900 text-slate-300'
+                  ? 'bg-amber-400 text-[#212121] font-bold'
+                  : 'bg-slate-800 text-slate-200'
               }`}
             >
-              <Icon icon="lucide:music" className="w-5 h-5 text-purple-300" />
+              <Icon icon="lucide:music" className="w-5 h-5 text-amber-400" />
               <span>Canciones</span>
             </button>
 
@@ -207,11 +207,11 @@ export const Header: React.FC<HeaderProps> = ({
               }}
               className={`flex items-center gap-2.5 px-4 py-3 rounded-xl text-sm font-semibold ${
                 activeTab === 'acordes'
-                  ? 'bg-purple-600 text-white'
-                  : 'bg-slate-900 text-slate-300'
+                  ? 'bg-amber-400 text-[#212121] font-bold'
+                  : 'bg-slate-800 text-slate-200'
               }`}
             >
-              <Icon icon="lucide:book-open" className="w-5 h-5 text-purple-300" />
+              <Icon icon="lucide:book-open" className="w-5 h-5 text-amber-400" />
               <span>Guía Piano</span>
             </button>
           </div>
