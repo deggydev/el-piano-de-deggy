@@ -68,24 +68,21 @@ export const AuthorExplorer: React.FC<AuthorExplorerProps> = ({
                       : 'bg-slate-800 hover:bg-slate-750 border-slate-700 text-slate-200'
                   }`}
                 >
-                  <div className="flex items-center gap-3.5 min-w-0">
-                    <div
-                      className={`w-12 h-12 rounded-xl ${author.avatarBg} p-0.5 shrink-0 flex items-center justify-center font-extrabold text-white shadow-md`}
-                    >
-                      <div className="w-full h-full bg-slate-900 rounded-[10px] flex items-center justify-center">
-                        {author.name.substring(0, 2).toUpperCase()}
-                      </div>
-                    </div>
-
-                    <div className="min-w-0">
-                      <div className={`font-bold text-base truncate flex items-center gap-2 ${isSelected ? 'text-[#212121]' : 'text-white'}`}>
-                        <span>{author.name}</span>
+                  <div className="flex items-center gap-3.5 min-w-0 flex-1">
+                    <div className="min-w-0 flex-1">
+                      <div className="flex items-center justify-between gap-2 flex-wrap">
+                        <span className={`font-bold text-base truncate ${isSelected ? 'text-[#212121]' : 'text-white'}`}>
+                          {author.name}
+                        </span>
+                        <span className={`text-[11px] font-bold px-2 py-0.5 rounded-full shrink-0 ${isSelected ? 'bg-[#212121]/15 text-[#212121]' : 'bg-slate-900 text-slate-300 border border-slate-700'}`}>
+                          {author.albums.length} {author.albums.length === 1 ? 'vol.' : 'vols.'}
+                        </span>
                       </div>
                       <div className={`text-xs truncate mt-0.5 ${isSelected ? 'text-[#212121]/80 font-medium' : 'text-slate-300'}`}>
                         {author.subtitle}
                       </div>
                       <div className={`text-[11px] font-semibold mt-1 ${isSelected ? 'text-[#212121]' : 'text-amber-400'}`}>
-                        {author.albums.length} {author.albums.length === 1 ? 'volumen' : 'volúmenes'} • {totalSongs} alabanzas
+                        {totalSongs} {totalSongs === 1 ? 'alabanza' : 'alabanzas'}
                       </div>
                     </div>
                   </div>
@@ -109,25 +106,21 @@ export const AuthorExplorer: React.FC<AuthorExplorerProps> = ({
         <div className="lg:col-span-8 space-y-8 bg-slate-800/95 border border-slate-700 rounded-3xl p-6 sm:p-8 backdrop-blur-sm shadow-xl">
           {/* Selected Author Profile Header */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 pb-6 border-b border-slate-700">
-            <div className="flex items-center gap-5">
-              <div
-                className={`w-16 h-16 sm:w-20 sm:h-20 rounded-2xl ${selectedAuthor.avatarBg} p-0.5 shadow-xl shrink-0 flex items-center justify-center font-black text-white text-3xl`}
-              >
-                <div className="w-full h-full bg-slate-900 rounded-[14px] flex items-center justify-center">
-                  {selectedAuthor.name.substring(0, 2).toUpperCase()}
-                </div>
-              </div>
-              <div>
-                <h3 className="text-2xl sm:text-3xl font-black text-white">
+            <div className="flex-1 min-w-0">
+              <div className="flex flex-wrap items-center gap-3">
+                <h3 className="text-2xl sm:text-4xl font-black text-white tracking-tight">
                   {selectedAuthor.name}
                 </h3>
-                <p className="text-amber-400 font-semibold text-sm sm:text-base mt-0.5">
-                  {selectedAuthor.subtitle}
-                </p>
-                <p className="text-slate-200 text-xs sm:text-sm mt-2 leading-relaxed max-w-2xl">
-                  {selectedAuthor.bio}
-                </p>
+                <span className="text-xs font-bold px-3.5 py-1 rounded-full bg-slate-900 text-amber-400 border border-amber-400/30">
+                  {selectedAuthor.albums.length} {selectedAuthor.albums.length === 1 ? 'volumen' : 'volúmenes'}
+                </span>
               </div>
+              <p className="text-amber-400 font-semibold text-sm sm:text-base mt-1">
+                {selectedAuthor.subtitle}
+              </p>
+              <p className="text-slate-200 text-xs sm:text-sm mt-3 leading-relaxed max-w-3xl">
+                {selectedAuthor.bio}
+              </p>
             </div>
           </div>
 

@@ -150,21 +150,16 @@ export const Portada: React.FC<PortadaProps> = ({
               className="group relative bg-slate-800 hover:bg-slate-750 border border-slate-700 hover:border-amber-400/50 rounded-2xl p-6 cursor-pointer transition-all duration-300 transform hover:-translate-y-1.5 hover:shadow-2xl hover:shadow-black/40 flex flex-col justify-between overflow-hidden shadow-lg"
             >
               <div>
-                <div className="flex items-center justify-between mb-5">
-                  <div className={`w-14 h-14 rounded-2xl ${author.avatarBg} p-0.5 shadow-lg flex items-center justify-center text-white font-black text-2xl`}>
-                    <div className="w-full h-full bg-slate-900 rounded-[14px] flex items-center justify-center group-hover:bg-transparent transition-colors">
-                      {author.name.substring(0, 2).toUpperCase()}
-                    </div>
-                  </div>
-                  <span className="text-xs font-bold px-3 py-1 rounded-full bg-slate-900 text-slate-300 border border-slate-700">
+                <div className="flex flex-wrap items-center justify-between gap-2.5 mb-2">
+                  <h3 className="text-xl font-bold text-white group-hover:text-amber-300 transition-colors">
+                    {author.name}
+                  </h3>
+                  <span className="text-xs font-bold px-3 py-1 rounded-full bg-slate-900 text-slate-300 border border-slate-700 shrink-0">
                     {author.albums.length} {author.albums.length === 1 ? 'volumen' : 'volúmenes'}
                   </span>
                 </div>
 
-                <h3 className="text-xl font-bold text-white group-hover:text-amber-300 transition-colors">
-                  {author.name}
-                </h3>
-                <p className="text-xs text-amber-400 font-semibold mt-1">
+                <p className="text-xs text-amber-400 font-semibold">
                   {author.subtitle}
                 </p>
                 <p className="text-slate-300 text-xs mt-3 line-clamp-3 leading-relaxed">
