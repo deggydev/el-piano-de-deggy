@@ -104,7 +104,11 @@ export async function generateSongSheetImage({
         ctx.font = lyricFont;
         const lyricWidth = ctx.measureText(token.lyric).width;
 
-        const tokenAdvance = Math.max(chordWidth, lyricWidth) + 10;
+        // Si el token termina en espacio o puntuación con espacio, añadimos separación normal entre palabras (+8).
+        // Si NO termina en espacio (ej: 'po' de 'po-der' o 'un' de 'un-ción'), no añadimos espacio extra (+0)
+        // para que las sílabas contiguas de una misma palabra se lean perfectamente unidas.
+        const spacingExtra = token.lyric.endsWith(' ') ? 8 : 0;
+        const tokenAdvance = Math.max(chordWidth, lyricWidth) + spacingExtra;
 
         // Si la palabra/acorde supera el margen derecho de la tarjeta y ya hay tokens en la línea,
         // hacemos SALTO DE LÍNEA VISUAL (Word Wrap) para mantener todo ordenado

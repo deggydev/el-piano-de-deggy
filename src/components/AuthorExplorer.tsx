@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { Icon } from '@iconify/react';
 import type { Author, Album, Song } from '../types/canciones';
 
@@ -20,10 +20,20 @@ export const AuthorExplorer: React.FC<AuthorExplorerProps> = ({
     initialAuthor ? initialAuthor.albums[0] : authors[0]?.albums[0] || null
   );
 
-  // When changing author, default to their first album
+  const detailCardRef = useRef<HTMLDivElement>(null);
+
+  // When changing author, default to their first album and auto-scroll on mobile
   const handleSelectAuthor = (author: Author) => {
     setSelectedAuthor(author);
     setSelectedAlbum(author.albums[0] || null);
+
+    // En modo móvil (o cuando la columna derecha se apila debajo en pantallas < 1024px),
+    // hacemos un scroll suave automático hasta la tarjeta del salmista y sus canciones.
+    if (window.innerWidth < 1024 && detailCardRef.current) {
+      setTimeout(() => {
+        detailCardRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 60);
+    }
   };
 
   if (!selectedAuthor) {
@@ -103,7 +113,7 @@ export const AuthorExplorer: React.FC<AuthorExplorerProps> = ({
         </div>
 
         {/* Right Column: Volumes / Albums and Songs (8 cols) */}
-        <div className="lg:col-span-8 space-y-8 bg-slate-800/95 border border-slate-700 rounded-3xl p-6 sm:p-8 backdrop-blur-sm shadow-xl">
+        <div ref={detailCardRef} className="lg:col-span-8 space-y-8 bg-slate-800/95 border border-slate-700 rounded-3xl p-6 sm:p-8 backdrop-blur-sm shadow-xl scroll-mt-24">
           {/* Selected Author Profile Header */}
           <div className="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-6 pb-6 border-b border-slate-700">
             <div className="flex-1 min-w-0">
