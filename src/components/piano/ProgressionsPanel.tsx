@@ -58,7 +58,7 @@ export const ProgressionsPanel: React.FC<ProgressionsPanelProps> = ({
       <div className="space-y-3">
         <label className="text-xs font-bold uppercase tracking-wider text-slate-300 block flex items-center justify-between">
           <span>1. Tono de la Canción (Tónica)</span>
-          <span className="text-amber-400 font-mono text-sm">{progRoot} {currentMode.toUpperCase()}</span>
+          <span className="text-amber-400 font-mono text-sm">{progRoot} ({currentMode.toUpperCase()})</span>
         </label>
 
         <div className="space-y-2">
@@ -92,7 +92,7 @@ export const ProgressionsPanel: React.FC<ProgressionsPanelProps> = ({
 
           {/* Tonos Menores */}
           <div>
-            <span className="text-[10px] font-bold uppercase text-emerald-400/80 block mb-1">Tonos Menores (ej. Sol menor):</span>
+            <span className="text-[10px] font-bold uppercase text-emerald-400/80 block mb-1">Tonos Menores:</span>
             <div className="grid grid-cols-4 sm:grid-cols-6 gap-1.5 sm:gap-2">
               {MINOR_ROOTS.map((mRoot, idx) => {
                 const baseRoot = ROOTS[idx];

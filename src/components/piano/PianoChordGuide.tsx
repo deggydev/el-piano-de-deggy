@@ -26,10 +26,12 @@ export const PianoChordGuide: React.FC = () => {
   const [selectedRoot, setSelectedRoot] = useState<string>('C');
   const [selectedType, setSelectedType] = useState<string>('');
   const [selectedInversion, setSelectedInversion] = useState<number>(0);
+  const [isPlayingDict, setIsPlayingDict] = useState<boolean>(false);
 
   // Escalas state
   const [scaleRoot, setScaleRoot] = useState<string>('C');
   const [scaleType, setScaleType] = useState<string>('mayor');
+  const [isPlayingScale, setIsPlayingScale] = useState<boolean>(false);
 
   // Progresiones state
   const [progRoot, setProgRoot] = useState<string>('C');
@@ -158,7 +160,7 @@ export const PianoChordGuide: React.FC = () => {
         <ModeTabs mode={mode} onSelectMode={handleSelectMode} />
       </div>
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-start">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8">
         {/* Left Controls Panel (5 cols) */}
         <div className="lg:col-span-5 bg-slate-800 border border-slate-700 rounded-2xl sm:rounded-3xl p-4 sm:p-6 md:p-8 space-y-5 sm:space-y-6 shadow-2xl backdrop-blur-sm">
           {mode === 'diccionario' && (
@@ -169,6 +171,15 @@ export const PianoChordGuide: React.FC = () => {
               onSelectType={setSelectedType}
               selectedInversion={selectedInversion}
               onSelectInversion={setSelectedInversion}
+              isPlayingDict={isPlayingDict}
+              onTogglePlayDict={() => {
+                const nextState = !isPlayingDict;
+                setIsPlayingDict(nextState);
+                if (nextState) {
+                  playChord(displayNotes, true, 4);
+                  setTimeout(() => setIsPlayingDict(false), 2000);
+                }
+              }}
             />
           )}
 
@@ -178,6 +189,15 @@ export const PianoChordGuide: React.FC = () => {
               onSelectScaleRoot={setScaleRoot}
               scaleType={scaleType}
               onSelectScaleType={setScaleType}
+              isPlayingScale={isPlayingScale}
+              onTogglePlayScale={() => {
+                const nextState = !isPlayingScale;
+                setIsPlayingScale(nextState);
+                if (nextState) {
+                  playChord(displayNotes, true, 4);
+                  setTimeout(() => setIsPlayingScale(false), 2500);
+                }
+              }}
             />
           )}
 
@@ -216,15 +236,17 @@ export const PianoChordGuide: React.FC = () => {
         </div>
 
         {/* Right Piano Keyboard Visualizer & Interactive Studio (7 cols) */}
-        <InteractiveKeyboard
-          activeVoicingNotes={activeVoicingNotes}
-          displayNotes={displayNotes}
-          mode={mode}
-          selectedInversion={selectedInversion}
-          manualNote={manualNote}
-          onKeyClick={handleKeyClick}
-          scrollContainerRef={scrollContainerRef}
-        />
+        <div className="lg:col-span-7 self-stretch">
+          <InteractiveKeyboard
+            activeVoicingNotes={activeVoicingNotes}
+            displayNotes={displayNotes}
+            mode={mode}
+            selectedInversion={selectedInversion}
+            manualNote={manualNote}
+            onKeyClick={handleKeyClick}
+            scrollContainerRef={scrollContainerRef}
+          />
+        </div>
       </div>
     </div>
   );

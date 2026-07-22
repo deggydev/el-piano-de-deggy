@@ -85,7 +85,9 @@ export function getChordNotes(chordString: string): string[] {
     intervals = [0, 3, 7];
   }
 
-  return intervals.map(i => KEYS_SHARP[(rootIndex + i) % 12]);
+  const isFlatKey = root.includes('b') || ['F', 'Bb', 'Eb', 'Ab', 'Db', 'Gb', 'Dm', 'Gm', 'Cm', 'Fm', 'Bbm', 'Ebm', 'Abm'].includes(root);
+  const keysArray = isFlatKey ? KEYS_FLAT : KEYS_SHARP;
+  return intervals.map(i => keysArray[(rootIndex + i) % 12]);
 }
 
 /**
@@ -185,9 +187,9 @@ export interface HarmonicChord {
 export function getHarmonicField(root: string, mode: 'mayor' | 'menor' = 'mayor'): HarmonicChord[] {
   let rootIndex = KEYS_SHARP.indexOf(root);
   if (rootIndex === -1) rootIndex = KEYS_FLAT.indexOf(root);
-  if (rootIndex === -1) return [];
-
-  const getNote = (semitones: number) => KEYS_SHARP[(rootIndex + semitones) % 12];
+  const isFlatKey = root.includes('b') || ['F', 'Bb', 'Eb', 'Ab', 'Db', 'Gb', 'Dm', 'Gm', 'Cm', 'Fm', 'Bbm', 'Ebm', 'Abm'].includes(root);
+  const keysArray = isFlatKey ? KEYS_FLAT : KEYS_SHARP;
+  const getNote = (semitones: number) => keysArray[(rootIndex + semitones) % 12];
 
   if (mode === 'mayor') {
     // Grados de la escala Mayor diatónica: I, ii, iii, IV, V, vi, vii°

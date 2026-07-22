@@ -7,6 +7,8 @@ interface ScalesPanelProps {
   onSelectScaleRoot: (root: string) => void;
   scaleType: string;
   onSelectScaleType: (type: string) => void;
+  isPlayingScale?: boolean;
+  onTogglePlayScale?: () => void;
 }
 
 export const ScalesPanel: React.FC<ScalesPanelProps> = ({
@@ -14,23 +16,40 @@ export const ScalesPanel: React.FC<ScalesPanelProps> = ({
   onSelectScaleRoot,
   scaleType,
   onSelectScaleType,
+  isPlayingScale,
+  onTogglePlayScale,
 }) => {
   return (
     <div className="space-y-6 animate-fadeIn">
-      <div className="border-b border-slate-700/80 pb-4">
-        <h3 className="text-lg font-bold text-white flex items-center gap-2">
-          <Icon icon="lucide:music" className="w-5 h-5 text-amber-400" />
-          <span>Escalas para Adornos y Fills</span>
-        </h3>
-        <p className="text-xs text-slate-400 mt-1">
-          Aprende qué notas usar para improvisar e introducir puentes en tus alabanzas.
-        </p>
+      {/* Header */}
+      <div className="border-b border-slate-700/80 pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div>
+          <h3 className="text-lg font-bold text-white flex items-center gap-2">
+            <Icon icon="lucide:music" className="w-5 h-5 text-amber-400" />
+            <span>Escalas Clave para Melodías y Adornos</span>
+          </h3>
+          <p className="text-xs text-slate-400 mt-1">
+            Escalas esenciales para hacer adornos, introducciones e improvisar durante la adoración.
+          </p>
+        </div>
+
+        <button
+          onClick={onTogglePlayScale}
+          className={`px-4 py-2 rounded-xl font-bold text-xs flex items-center justify-center gap-2 shadow-lg transition-all shrink-0 ${
+            isPlayingScale
+              ? 'bg-red-500 text-white animate-pulse'
+              : 'bg-amber-400 hover:bg-amber-300 text-[#212121]'
+          }`}
+        >
+          <Icon icon={isPlayingScale ? 'lucide:pause' : 'lucide:play'} className="w-4 h-4" />
+          <span>{isPlayingScale ? 'Detener Escala' : 'Tocar Escala Ascendente'}</span>
+        </button>
       </div>
 
-      {/* 1. Scale Root (Mayores y Menores) */}
+      {/* 1. Root Note (Mayores y Menores) */}
       <div className="space-y-3">
         <label className="text-xs font-bold uppercase tracking-wider text-slate-300 block flex items-center justify-between">
-          <span>1. Tónica de la Escala</span>
+          <span>1. Tónica / Nota Raíz</span>
           <span className="text-amber-400 font-mono text-sm">{scaleRoot}</span>
         </label>
         
@@ -65,7 +84,7 @@ export const ScalesPanel: React.FC<ScalesPanelProps> = ({
 
           {/* Tonos Menores */}
           <div>
-            <span className="text-[10px] font-bold uppercase text-emerald-400/80 block mb-1">Tonos Menores (ej. Sol menor):</span>
+            <span className="text-[10px] font-bold uppercase text-emerald-400/80 block mb-1">Tonos Menores:</span>
             <div className="grid grid-cols-4 sm:grid-cols-6 gap-1.5 sm:gap-2">
               {MINOR_ROOTS.map((mRoot, idx) => {
                 const baseRoot = ROOTS[idx];

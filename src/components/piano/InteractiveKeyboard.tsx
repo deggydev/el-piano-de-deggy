@@ -24,7 +24,7 @@ export const InteractiveKeyboard: React.FC<InteractiveKeyboardProps> = ({
   scrollContainerRef,
 }) => {
   return (
-    <div className="lg:col-span-7 sticky top-24 z-30 bg-slate-800 border border-slate-700 rounded-2xl sm:rounded-3xl p-4 sm:p-8 md:p-10 space-y-6 sm:space-y-8 backdrop-blur-sm shadow-2xl flex flex-col items-center justify-center relative overflow-hidden transition-all duration-300">
+    <div className="sticky top-24 z-30 bg-slate-800 border border-slate-700 rounded-2xl sm:rounded-3xl p-4 sm:p-8 md:p-10 space-y-6 sm:space-y-8 backdrop-blur-sm shadow-2xl flex flex-col items-center justify-center relative overflow-hidden transition-all duration-300">
       
       <div className="text-center space-y-2 max-w-xl">
         <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-amber-400/40 text-amber-300 text-xs font-bold mb-1">

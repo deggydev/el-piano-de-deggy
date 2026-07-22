@@ -29,16 +29,18 @@ export const FamilyCirclePanel: React.FC<FamilyCirclePanelProps> = ({
 
   return (
     <div className="space-y-6 animate-fadeIn">
+      {/* Header */}
       <div className="border-b border-slate-700/80 pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
         <div>
           <h3 className="text-lg font-bold text-white flex items-center gap-2">
-            <Icon icon="lucide:layers" className="w-5 h-5 text-amber-400" />
-            <span>Familia de Acordes del Tono</span>
+            <Icon icon="lucide:disc" className="w-5 h-5 text-amber-400" />
+            <span>Círculo de Tonalidad (Familia Armónica)</span>
           </h3>
-          <p className="text-xs text-slate-400 mt-1 leading-relaxed">
-            Si el himno o cancionero dice <strong className="text-amber-300">"Tono de {familyRoot} {familyMode}"</strong>, estos son los acordes exactos con los que vas a acompañar.
+          <p className="text-xs text-slate-400 mt-1">
+            Todos los acordes diatónicos y complementarios para acompañar en la iglesia.
           </p>
         </div>
+
         <button
           onClick={onTogglePlayFamilyCircle}
           className={`px-4 py-2 rounded-xl font-bold text-xs flex items-center justify-center gap-2 shadow-lg transition-all shrink-0 ${
@@ -46,10 +48,9 @@ export const FamilyCirclePanel: React.FC<FamilyCirclePanelProps> = ({
               ? 'bg-red-500 text-white animate-pulse'
               : 'bg-amber-400 hover:bg-amber-300 text-[#212121]'
           }`}
-          title="Reproducir automáticamente el círculo clásico de esta tonalidad"
         >
           <Icon icon={isPlayingFamilyCircle ? 'lucide:pause' : 'lucide:play'} className="w-4 h-4" />
-          <span>{isPlayingFamilyCircle ? 'Detener Círculo' : 'Oír Círculo del Tono'}</span>
+          <span>{isPlayingFamilyCircle ? 'Detener Auto-Play' : 'Auto-Reproducir Círculo'}</span>
         </button>
       </div>
 
@@ -57,7 +58,7 @@ export const FamilyCirclePanel: React.FC<FamilyCirclePanelProps> = ({
       <div className="space-y-3">
         <label className="text-xs font-bold uppercase tracking-wider text-slate-300 block flex items-center justify-between">
           <span>1. Tono / Nota Raíz de la Canción</span>
-          <span className="text-amber-400 font-mono text-sm">{familyRoot} {familyMode.toUpperCase()}</span>
+          <span className="text-amber-400 font-mono text-sm">{familyRoot} ({familyMode.toUpperCase()})</span>
         </label>
         
         <div className="space-y-2">
@@ -91,7 +92,7 @@ export const FamilyCirclePanel: React.FC<FamilyCirclePanelProps> = ({
 
           {/* Tonos Menores */}
           <div>
-            <span className="text-[10px] font-bold uppercase text-emerald-400/80 block mb-1">Tonos Menores (ej. Sol menor):</span>
+            <span className="text-[10px] font-bold uppercase text-emerald-400/80 block mb-1">Tonos Menores:</span>
             <div className="grid grid-cols-4 sm:grid-cols-6 gap-1.5 sm:gap-2">
               {MINOR_ROOTS.map((mRoot, idx) => {
                 const baseRoot = ROOTS[idx];

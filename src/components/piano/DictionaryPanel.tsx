@@ -10,6 +10,8 @@ interface DictionaryPanelProps {
   onSelectType: (type: string) => void;
   selectedInversion: number;
   onSelectInversion: (inv: number) => void;
+  isPlayingDict?: boolean;
+  onTogglePlayDict?: () => void;
 }
 
 export const DictionaryPanel: React.FC<DictionaryPanelProps> = ({
@@ -19,19 +21,38 @@ export const DictionaryPanel: React.FC<DictionaryPanelProps> = ({
   onSelectType,
   selectedInversion,
   onSelectInversion,
+  isPlayingDict,
+  onTogglePlayDict,
 }) => {
-  const currentNotesCount = getChordNotes(`${selectedRoot}${selectedType}`).length;
+  const currentChord = `${selectedRoot}${selectedType}`;
+  const notes = getChordNotes(currentChord);
+  const currentNotesCount = notes.length;
 
   return (
     <div className="space-y-6 animate-fadeIn">
-      <div className="flex items-center justify-between border-b border-slate-700/80 pb-4">
-        <h3 className="text-lg font-bold text-white flex items-center gap-2">
-          <Icon icon="lucide:sliders" className="w-5 h-5 text-amber-400" />
-          <span>Configurar Acorde</span>
-        </h3>
-        <span className="text-xs text-slate-400 font-medium">
-          {CHORD_CATEGORIES.reduce((acc, c) => acc + c.types.length, 0)} cualidad(es) disponibles
-        </span>
+      {/* Header */}
+      <div className="border-b border-slate-700/80 pb-4 flex flex-col sm:flex-row sm:items-center justify-between gap-3">
+        <div>
+          <h3 className="text-lg font-bold text-white flex items-center gap-2">
+            <Icon icon="lucide:book-open" className="w-5 h-5 text-amber-400" />
+            <span>Diccionario de Acordes Cristianos</span>
+          </h3>
+          <p className="text-xs text-slate-400 mt-1">
+            Encuentra al instante cualquier acorde para himnos clásicos o adoración contemporánea.
+          </p>
+        </div>
+
+        <button
+          onClick={onTogglePlayDict}
+          className={`px-4 py-2 rounded-xl font-bold text-xs flex items-center justify-center gap-2 shadow-lg transition-all shrink-0 ${
+            isPlayingDict
+              ? 'bg-red-500 text-white animate-pulse'
+              : 'bg-amber-400 hover:bg-amber-300 text-[#212121]'
+          }`}
+        >
+          <Icon icon={isPlayingDict ? 'lucide:pause' : 'lucide:play'} className="w-4 h-4" />
+          <span>{isPlayingDict ? 'Detener Arpegio' : 'Oír Acorde'}</span>
+        </button>
       </div>
 
       {/* 1. Root Note (Mayores y Menores) */}
@@ -72,7 +93,7 @@ export const DictionaryPanel: React.FC<DictionaryPanelProps> = ({
 
           {/* Tonos Menores */}
           <div>
-            <span className="text-[10px] font-bold uppercase text-emerald-400/80 block mb-1">Tonos Menores (ej. Sol menor):</span>
+            <span className="text-[10px] font-bold uppercase text-emerald-400/80 block mb-1">Tonos Menores:</span>
             <div className="grid grid-cols-4 sm:grid-cols-6 gap-1.5 sm:gap-2">
               {MINOR_ROOTS.map((mRoot, idx) => {
                 const baseRoot = ROOTS[idx];
