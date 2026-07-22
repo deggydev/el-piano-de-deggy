@@ -6,7 +6,7 @@ import { Header } from './components/Header';
 import { Portada } from './components/Portada';
 import { AuthorExplorer } from './components/AuthorExplorer';
 import { SongCatalog } from './components/SongCatalog';
-import { PianoChordGuide } from './components/PianoChordGuide';
+import { PianoChordGuide } from './components/piano';
 import { SongViewer } from './components/SongViewer';
 
 const autores: Author[] = cancionesDataRaw as Author[];

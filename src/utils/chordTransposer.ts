@@ -175,6 +175,7 @@ export interface HarmonicChord {
   role: string;
   desc: string;
   isMain?: boolean;
+  category?: 'diatonico' | 'complementario';
 }
 
 /**
@@ -190,56 +191,135 @@ export function getHarmonicField(root: string, mode: 'mayor' | 'menor' = 'mayor'
 
   if (mode === 'mayor') {
     // Grados de la escala Mayor diatónica: I, ii, iii, IV, V, vi, vii°
-    // Para worship agregamos comúnmente el V/vii (Bajo en 3ª) en vez del disminuido puro
     return [
       {
         grade: 'I',
         chord: `${getNote(0)}`,
         role: 'I • Tónica (Centro y Reposo)',
         desc: 'El acorde principal del himno o coro. Aquí empieza y termina la gran mayoría de canciones de alabanza.',
-        isMain: true
+        isMain: true,
+        category: 'diatonico'
       },
       {
         grade: 'ii',
         chord: `${getNote(2)}m`,
         role: 'ii • Supertónica (Conexión Suave)',
         desc: 'Acorde menor muy suave. Se usa para enlazar fluidamente hacia el Dominante (V) o hacia el IV.',
-        isMain: false
+        isMain: false,
+        category: 'diatonico'
       },
       {
         grade: 'iii',
         chord: `${getNote(4)}m`,
         role: 'iii • Mediante (Toque Íntimo/Gospel)',
         desc: 'Acorde menor melancólico. Excelente para pasar hacia el Subdominante (IV) o el Relativo Menor (vi).',
-        isMain: false
+        isMain: false,
+        category: 'diatonico'
       },
       {
         grade: 'IV',
         chord: `${getNote(5)}`,
         role: 'IV • Subdominante (Apertura y Coro)',
         desc: '¡El segundo acorde más importante! Aporta energía, amplitud y emoción. Muy usado en los coros y puentes.',
-        isMain: true
+        isMain: true,
+        category: 'diatonico'
       },
       {
         grade: 'V',
         chord: `${getNote(7)}`,
         role: 'V • Dominante (Empuje y Tensión)',
         desc: 'Genera expectación y fuerza. Pide a gritos resolver de vuelta a la Tónica (I) para dar alivio.',
-        isMain: true
+        isMain: true,
+        category: 'diatonico'
       },
       {
         grade: 'vi',
         chord: `${getNote(9)}m`,
         role: 'vi • Relativo Menor (Profundidad)',
         desc: 'El hermano menor de la tonalidad. Se usa muchísimo para momentos de adoración profunda, clímax y quebrantamiento.',
-        isMain: true
+        isMain: true,
+        category: 'diatonico'
       },
       {
         grade: 'vii° / Bajo',
         chord: `${getNote(7)}/${getNote(11)}`,
         role: 'V/vii • Bajo en 3ª (Paso Celestial)',
         desc: 'Voicing especial muy usado en teclados de iglesia (Dominante con bajo en la 3ª) para caminar hermosamente entre el I y el vi.',
-        isMain: false
+        isMain: false,
+        category: 'diatonico'
+      },
+      // Acordes Complementarios, Prestados y de Paso (Worship & Gospel)
+      {
+        grade: 'v',
+        chord: `${getNote(7)}m`,
+        role: 'v • Quinto Menor (2-V hacia el IV)',
+        desc: 'Acorde menor que junto con el I7 prepara un puente o caída hermosa hacia el Subdominante (IV / Coro). Indispensable en worship.',
+        isMain: true,
+        category: 'complementario'
+      },
+      {
+        grade: 'I7',
+        chord: `${getNote(0)}7`,
+        role: 'I7 • Dominante del IV (Empuje al Coro)',
+        desc: 'Séptima de dominante en la tónica para impulsar con gran fuerza y gloria la entrada del Subdominante (IV).',
+        isMain: true,
+        category: 'complementario'
+      },
+      {
+        grade: 'I/III',
+        chord: `${getNote(0)}/${getNote(4)}`,
+        role: 'I/III • Tónica con Bajo en 3ª (Ascenso)',
+        desc: 'Voicing fundamental en teclados para ascender suave y elegantemente desde la tónica hacia el Subdominante (IV).',
+        isMain: true,
+        category: 'complementario'
+      },
+      {
+        grade: 'iv',
+        chord: `${getNote(5)}m`,
+        role: 'iv • Subdominante Menor (Toque Sublime)',
+        desc: 'Acorde menor prestado. Aporta un sentimiento nostálgico y sublime al resolver de regreso a la Tónica (I).',
+        isMain: false,
+        category: 'complementario'
+      },
+      {
+        grade: 'bVII',
+        chord: `${getNote(10)}`,
+        role: 'bVII • Subtónica Prestada (Fuerza Worship)',
+        desc: 'Acorde mayor moderno tomado del modo menor. Aporta gran empuje, amplitud y épica (I - bVII - IV - I).',
+        isMain: true,
+        category: 'complementario'
+      },
+      {
+        grade: 'III7',
+        chord: `${getNote(4)}7`,
+        role: 'III7 • Dominante del vi (Paso Dramático)',
+        desc: 'Acorde mayor/7ª usado como puente dramático para caer con fuerza y emotividad al Relativo Menor (vi).',
+        isMain: false,
+        category: 'complementario'
+      },
+      {
+        grade: 'VI7',
+        chord: `${getNote(9)}7`,
+        role: 'VI7 • Dominante del ii (Enlace Elegante)',
+        desc: 'Acorde mayor/7ª para preparar y embellecer el camino hacia la Supertónica (ii).',
+        isMain: false,
+        category: 'complementario'
+      },
+      {
+        grade: 'Vsus4',
+        chord: `${getNote(7)}sus4`,
+        role: 'Vsus4 • Dominante Suspendido (Expectativa)',
+        desc: 'Acorde flotante que crea expectativa celestial antes de resolver en el Dominante puro (V).',
+        isMain: true,
+        category: 'complementario'
+      },
+      {
+        grade: 'ii7',
+        chord: `${getNote(2)}m7`,
+        role: 'ii7 • Supertónica 7ª (Suavidad Gospel)',
+        desc: 'Variante muy cálida del segundo grado, perfecta para coros e himnos de adoración íntima.',
+        isMain: false,
+        category: 'complementario'
       }
     ];
   } else {
@@ -250,49 +330,105 @@ export function getHarmonicField(root: string, mode: 'mayor' | 'menor' = 'mayor'
         chord: `${getNote(0)}m`,
         role: 'i • Tónica Menor (Centro Solemnidad)',
         desc: 'Acorde principal en himnos de oración, quebrantamiento o coros rápidos de júbilo/avivamiento.',
-        isMain: true
+        isMain: true,
+        category: 'diatonico'
       },
       {
         grade: 'ii° / ii',
         chord: `${getNote(2)}m7b5`,
         role: 'ii° • Semi-disminuido (Paso)',
         desc: 'Acorde de tensión intermedia que prepara la caída hacia el dominante (V).',
-        isMain: false
+        isMain: false,
+        category: 'diatonico'
       },
       {
         grade: 'III',
         chord: `${getNote(3)}`,
         role: 'III • Relativo Mayor (Luz)',
         desc: 'El hermano mayor del tono. Aporta esperanza y descanso dentro de una canción en tono menor.',
-        isMain: true
+        isMain: true,
+        category: 'diatonico'
       },
       {
         grade: 'iv',
         chord: `${getNote(5)}m`,
         role: 'iv • Subdominante Menor (Intensidad)',
         desc: 'Acorde profundo y dramático, muy habitual antes de subir hacia la tensión mayor.',
-        isMain: true
+        isMain: true,
+        category: 'diatonico'
       },
       {
         grade: 'V / v',
         chord: `${getNote(7)}7`,
         role: 'V7 • Dominante Mayor (Fuerza)',
         desc: 'Se toca mayor con 7ª (armónica) para impulsar con mucha fuerza el regreso a la Tónica menor (i).',
-        isMain: true
+        isMain: true,
+        category: 'diatonico'
       },
       {
         grade: 'VI',
         chord: `${getNote(8)}`,
         role: 'VI • Submediante (Majestuoso)',
         desc: 'Acorde mayor glorioso, comúnmente usado al subir el ánimo en coros de avivamiento (VI - VII - i).',
-        isMain: true
+        isMain: true,
+        category: 'diatonico'
       },
       {
         grade: 'VII',
         chord: `${getNote(10)}`,
         role: 'VII • Subtónica (Ascenso Gospel)',
         desc: 'Acorde mayor firme que conecta el VI con la tónica menor (ej. C - D - Em).',
-        isMain: false
+        isMain: false,
+        category: 'diatonico'
+      },
+      // Acordes Complementarios y de Paso en Tono Menor
+      {
+        grade: 'v',
+        chord: `${getNote(7)}m`,
+        role: 'v • Dominante Menor Natural',
+        desc: 'Acorde menor del quinto grado (sin la 7ª mayor del V7), usado en himnos solemnes, baladas y adoración suave.',
+        isMain: true,
+        category: 'complementario'
+      },
+      {
+        grade: 'IV',
+        chord: `${getNote(5)}`,
+        role: 'IV • Subdominante Mayor (Modo Doriano)',
+        desc: 'Acorde mayor característico del modo Doriano, muy usado en worship moderno para dar luz y apertura en tono menor.',
+        isMain: true,
+        category: 'complementario'
+      },
+      {
+        grade: 'i/III',
+        chord: `${getNote(0)}/${getNote(3)}`,
+        role: 'i/III • Tónica con Bajo en 3ª (Caminar en Bajo)',
+        desc: 'Voicing de paso con bajo en el tercer grado, excelente para descender gradualmente o conectar con el iv.',
+        isMain: true,
+        category: 'complementario'
+      },
+      {
+        grade: 'III/v',
+        chord: `${getNote(3)}/${getNote(7)}`,
+        role: 'III/v • Relativo Mayor con Bajo en 5ª',
+        desc: 'Voicing estable para sostener o hacer colchones armónicos cálidos mientras el canto avanza.',
+        isMain: false,
+        category: 'complementario'
+      },
+      {
+        grade: 'i7',
+        chord: `${getNote(0)}m7`,
+        role: 'i7 • Tónica Menor 7ª (Cálido y Gospel)',
+        desc: 'Sonido envolvente y gospel para estrofas, intros y momentos de ministración o intimidad.',
+        isMain: false,
+        category: 'complementario'
+      },
+      {
+        grade: 'VImaj7',
+        chord: `${getNote(8)}maj7`,
+        role: 'VImaj7 • Submediante Mayor 7ª (Celestial)',
+        desc: 'El acorde favorito en baladas lentas de adoración para crear un ambiente celestial y abierto.',
+        isMain: false,
+        category: 'complementario'
       }
     ];
   }
